@@ -1,0 +1,1 @@
+TexturePacker --extrude 0 --algorithm Basic --trim-mode None --png-opt-level 0 --disable-auto-alias --sheet Examples/texting.png --data Examples/texting.json --format json-array d:\Characters\
