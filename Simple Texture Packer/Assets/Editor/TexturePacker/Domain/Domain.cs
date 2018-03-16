@@ -1,8 +1,8 @@
 ﻿using System;
-using TexturePacker.Domain.Entities;
+using Editor.TexturePacker.Domain.Entities;
 using UnityEngine;
 
-namespace TexturePacker.Domain
+namespace Editor.TexturePacker.Domain
 {
 	public static class Domain
 	{

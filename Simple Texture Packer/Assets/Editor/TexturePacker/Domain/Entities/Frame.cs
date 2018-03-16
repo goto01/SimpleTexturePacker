@@ -1,7 +1,7 @@
 ﻿using System;
-using UnityEngine;
+using TexturePacker.Domain.Entities;
 
-namespace TexturePacker.Domain.Entities
+namespace Editor.TexturePacker.Domain.Entities
 {
 	[Serializable]
 	public class Frame

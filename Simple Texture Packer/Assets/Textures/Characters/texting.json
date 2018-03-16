@@ -1,0 +1,471 @@
+{"frames": [
+
+{
+	"filename": "alien1.png",
+	"frame": {"x":480,"y":24,"w":96,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":24},
+	"sourceSize": {"w":96,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ammo.png",
+	"frame": {"x":576,"y":24,"w":24,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+	"sourceSize": {"w":24,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "beaver.png",
+	"frame": {"x":0,"y":198,"w":144,"h":96},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":144,"h":96},
+	"sourceSize": {"w":144,"h":96},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bigrobot.png",
+	"frame": {"x":630,"y":126,"w":192,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":192,"h":48},
+	"sourceSize": {"w":192,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "controls.png",
+	"frame": {"x":344,"y":198,"w":640,"h":480},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":640,"h":480},
+	"sourceSize": {"w":640,"h":480},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "controls2.png",
+	"frame": {"x":144,"y":198,"w":200,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":110},
+	"sourceSize": {"w":200,"h":110},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "dam health gray tex.png",
+	"frame": {"x":170,"y":0,"w":148,"h":13},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":148,"h":13},
+	"sourceSize": {"w":148,"h":13},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "dam health.png",
+	"frame": {"x":432,"y":126,"w":150,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":48},
+	"sourceSize": {"w":150,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/blackhole 24x24.png",
+	"frame": {"x":0,"y":48,"w":336,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":336,"h":24},
+	"sourceSize": {"w":336,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/bullet.png",
+	"frame": {"x":518,"y":0,"w":20,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
+	"sourceSize": {"w":20,"h":20},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/cursor/crosshair reload.png",
+	"frame": {"x":696,"y":24,"w":144,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":144,"h":24},
+	"sourceSize": {"w":144,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/cursor/crosshair reload1.png",
+	"frame": {"x":512,"y":78,"w":48,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
+	"sourceSize": {"w":48,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/cursor/crosshair reload2.png",
+	"frame": {"x":560,"y":78,"w":48,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
+	"sourceSize": {"w":48,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/cursor/crosshair reload3.png",
+	"frame": {"x":464,"y":78,"w":48,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
+	"sourceSize": {"w":48,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/cursor/crosshair reload4.png",
+	"frame": {"x":416,"y":78,"w":48,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
+	"sourceSize": {"w":48,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/cursor/crosshair reload5.png",
+	"frame": {"x":320,"y":78,"w":48,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
+	"sourceSize": {"w":48,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/cursor/crosshair reload6.png",
+	"frame": {"x":368,"y":78,"w":48,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
+	"sourceSize": {"w":48,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/cursor/crosshair.png",
+	"frame": {"x":822,"y":126,"w":48,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
+	"sourceSize": {"w":48,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/cursor/no ammo.png",
+	"frame": {"x":582,"y":126,"w":48,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
+	"sourceSize": {"w":48,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/explosion middle.png",
+	"frame": {"x":0,"y":78,"w":320,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":320,"h":32},
+	"sourceSize": {"w":320,"h":32},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/explosion.png",
+	"frame": {"x":336,"y":48,"w":240,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":24},
+	"sourceSize": {"w":240,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/laser bullet.png",
+	"frame": {"x":678,"y":0,"w":20,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
+	"sourceSize": {"w":20,"h":20},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/muzzle flash.png",
+	"frame": {"x":718,"y":0,"w":20,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
+	"sourceSize": {"w":20,"h":20},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/shotgun bullet.png",
+	"frame": {"x":698,"y":0,"w":20,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
+	"sourceSize": {"w":20,"h":20},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/sparkle.png",
+	"frame": {"x":600,"y":24,"w":96,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":24},
+	"sourceSize": {"w":96,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/swipe.png",
+	"frame": {"x":760,"y":48,"w":160,"h":30},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":160,"h":30},
+	"sourceSize": {"w":160,"h":30},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gun1.png",
+	"frame": {"x":738,"y":0,"w":20,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
+	"sourceSize": {"w":20,"h":20},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gun2.png",
+	"frame": {"x":758,"y":0,"w":20,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
+	"sourceSize": {"w":20,"h":20},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "health.png",
+	"frame": {"x":826,"y":0,"w":24,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+	"sourceSize": {"w":24,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "hero10000.png",
+	"frame": {"x":850,"y":0,"w":96,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":24},
+	"sourceSize": {"w":96,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "machinegun.png",
+	"frame": {"x":802,"y":0,"w":24,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+	"sourceSize": {"w":24,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "numbers1.png",
+	"frame": {"x":0,"y":0,"w":60,"h":9},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":9},
+	"sourceSize": {"w":60,"h":9},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "numbers2.png",
+	"frame": {"x":100,"y":0,"w":70,"h":10},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":10},
+	"sourceSize": {"w":70,"h":10},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "pistol reload.png",
+	"frame": {"x":538,"y":0,"w":140,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":140,"h":20},
+	"sourceSize": {"w":140,"h":20},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "redneckret 40x30.png",
+	"frame": {"x":600,"y":48,"w":160,"h":30},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":160,"h":30},
+	"sourceSize": {"w":160,"h":30},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "reload anim.png",
+	"frame": {"x":60,"y":0,"w":40,"h":10},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":40,"h":10},
+	"sourceSize": {"w":40,"h":10},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "rifle.png",
+	"frame": {"x":360,"y":24,"w":24,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+	"sourceSize": {"w":24,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "robotb.png",
+	"frame": {"x":144,"y":24,"w":216,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":216,"h":24},
+	"sourceSize": {"w":216,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "robotb2.png",
+	"frame": {"x":0,"y":126,"w":432,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":432,"h":48},
+	"sourceSize": {"w":432,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "shotgun_reload 20x20.png",
+	"frame": {"x":318,"y":0,"w":200,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":20},
+	"sourceSize": {"w":200,"h":20},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ufo.png",
+	"frame": {"x":870,"y":126,"w":96,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":72},
+	"sourceSize": {"w":96,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ui bullets.png",
+	"frame": {"x":576,"y":48,"w":24,"h":30},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":30},
+	"sourceSize": {"w":24,"h":30},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ui gun s.png",
+	"frame": {"x":96,"y":24,"w":24,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+	"sourceSize": {"w":24,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ui gun.png",
+	"frame": {"x":72,"y":24,"w":24,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+	"sourceSize": {"w":24,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ui machinegun s.png",
+	"frame": {"x":24,"y":24,"w":24,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+	"sourceSize": {"w":24,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ui machinegun.png",
+	"frame": {"x":0,"y":24,"w":24,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+	"sourceSize": {"w":24,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ui rifle s.png",
+	"frame": {"x":946,"y":0,"w":24,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+	"sourceSize": {"w":24,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ui rifle.png",
+	"frame": {"x":48,"y":24,"w":24,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+	"sourceSize": {"w":24,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ui shotgun s.png",
+	"frame": {"x":778,"y":0,"w":24,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+	"sourceSize": {"w":24,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "ui shotgun.png",
+	"frame": {"x":120,"y":24,"w":24,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+	"sourceSize": {"w":24,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "zombie1.png",
+	"frame": {"x":384,"y":24,"w":96,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":24},
+	"sourceSize": {"w":96,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "texting.png",
+	"format": "RGBA8888",
+	"size": {"w":984,"h":678},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a4a5b6e3d5333d0621c64309c37106da:2fc190f10d1ba3b845b24930dc3050db:32954549f9d89fda9be77d06317c0a57$"
+}
+}
