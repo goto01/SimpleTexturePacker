@@ -1,33 +1,57 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Editor.TexturePacker.Domain;
 using Editor.TexturePacker.Domain.Entities;
 using Editor.TexturePacker.Repository;
+using UnityEditor;
 using UnityEngine;
 
 namespace Editor.TexturePacker.Transformation
 {
-	public class Transformation
+	public class Transformation : IDisposable
 	{
 		private const char Separator = '/';
-
-		public static void Transform(TextureDescription textureDescription)
+		private readonly TextureImporter _textureImporter;
+		private readonly TextureDescription _textureDescription;
+		private readonly string _textureAssetPath;
+		private readonly FramesContainer _rawContainer;
+		private readonly List<SpriteDescription> _newSpriteDescriptions;
+		
+		private TextureRepository TextureRepository{get { return _textureDescription.TextureRepository; }}
+		
+		public Transformation(TextureDescription textureDescription)
 		{
-			var rawContainer = Domain.Domain.LoadContainer(textureDescription.JsonDataFile);
-			MapRepository(rawContainer, textureDescription.TextureRepository);
+			_textureDescription = textureDescription;
+			_textureAssetPath = AssetDatabase.GetAssetPath(_textureDescription.Texture);
+			_rawContainer = Domain.Domain.LoadContainer(_textureDescription.JsonDataFile);
+			_newSpriteDescriptions = new List<SpriteDescription>();
+		}
+		
+		public void Transform()
+		{
+			using (var textureImporterWrapper = new TextureImporterWrapper(_textureAssetPath))
+			{
+				textureImporterWrapper.ClearSpritesMetaData();
+				MapRepository(textureImporterWrapper);	
+			}
+			EditorUtility.SetDirty(_textureDescription);
 		}
 
-		private static void MapRepository(FramesContainer rawContainer, TextureRepository textureRepository)
+		private void MapRepository(TextureImporterWrapper textureImporterWrapper)
 		{
-			for (int index = 0; index < rawContainer.frames.Length; index++)
+			for (int index = 0; index < _rawContainer.frames.Length; index++)
 			{
-				MapFrame(rawContainer.frames[index], textureRepository);
+				var frame = _rawContainer.frames[index];
+				var folder = GenerateFolder(frame);
+				CreateOrUpdateSprite(folder, frame, textureImporterWrapper);
 			}
 		}
 
-		private static void MapFrame(Frame frame, TextureRepository textureRepository)
+		private Folder GenerateFolder(Frame frame)
 		{
 			var items = frame.filename.Split(Separator).ToList();
-			var root = textureRepository.Root;
+			var root = TextureRepository.Root;
 			for (; items.Count > 1;)
 			{
 				var folder = GetFolder(root, items[0]);
@@ -40,38 +64,62 @@ namespace Editor.TexturePacker.Transformation
 				root = CreateFolder(root, items[0]);
 				items.RemoveAt(0);
 			}
-			CreateOrUpdateSprite(root, frame);
+			return root;
 		}
 
-		private static void CreateOrUpdateSprite(Folder folder, Frame frame)
+		private void CreateOrUpdateSprite(Folder folder, Frame frame, TextureImporterWrapper textureImporterWrapper)
 		{
 			var spriteDescription = GetSpriteDescription(folder, frame.filename);
-			if (spriteDescription == null) spriteDescription = CreateSpriteDescription(folder, frame.filename);
-			
+			if (spriteDescription == null)
+			{
+				spriteDescription = CreateSpriteDescription(folder, frame, textureImporterWrapper);
+				_newSpriteDescriptions.Add(spriteDescription);
+				return;
+			}
+			CreateSpriteMetaData(frame, textureImporterWrapper);
 		}
 
-		private static Folder GetFolder(Folder folder, string folderName)
+		private Folder GetFolder(Folder folder, string folderName)
 		{
 			return folder.Folders.SingleOrDefault(x => x.Name.Equals(folderName));
 		}
 
-		private static Folder CreateFolder(Folder parent, string folderName)
+		private Folder CreateFolder(Folder parent, string folderName)
 		{
 			var folder = new Folder() {Name = folderName};
 			parent.Folders.Add(folder);
 			return folder;
 		}
 
-		private static SpriteDescription GetSpriteDescription(Folder folder, string spriteFileName)
+		private SpriteDescription GetSpriteDescription(Folder folder, string spriteFileName)
 		{
 			return folder.SpriteDescriptions.SingleOrDefault(x => x.FileName.Equals(spriteFileName));
 		}
 
-		private static SpriteDescription CreateSpriteDescription(Folder folder, string spriteFileName)
+		private SpriteDescription CreateSpriteDescription(Folder folder, Frame frame, TextureImporterWrapper textureImporterWrapper)
 		{
-			var spriteDesription = new SpriteDescription(){FileName = spriteFileName};
+			var spriteDesription = new SpriteDescription(){FileName = frame.filename};
 			folder.SpriteDescriptions.Add(spriteDesription);
+			CreateSpriteMetaData(frame, textureImporterWrapper);
 			return spriteDesription;
+		}
+
+		private void CreateSpriteMetaData(Frame frame, TextureImporterWrapper textureImporterWrapper)
+		{
+			var rect = new Rect(frame.frame.x, _textureDescription.Texture.height - frame.frame.y - frame.frame.h, frame.frame.w, frame.frame.h);
+			var pivot = new Vector2(frame.pivot.x, frame.pivot.y);
+			textureImporterWrapper.AddSpriteMetaData(frame.filename, rect, pivot);
+		}
+
+		public void Dispose()
+		{
+			using (var textureImporterWrapper = new TextureImporterWrapper(_textureAssetPath, false))
+			{
+				foreach (var spriteDescription in _newSpriteDescriptions)
+				{
+					spriteDescription.Sprite = textureImporterWrapper.GetSprite(spriteDescription.FileName);
+				}
+			}
 		}
 	}
 }

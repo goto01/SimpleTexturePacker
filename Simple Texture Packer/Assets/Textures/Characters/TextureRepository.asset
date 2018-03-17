@@ -13,5 +13,113 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Root:
     Name: Root
-    Folders: []
-    SpriteDescriptions: []
+    Folders:
+    - Name: FX
+      Folders:
+      - Name: cursor
+        Folders: []
+        SpriteDescriptions:
+        - Sprite: {fileID: 21300036, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+          FileName: FX/cursor/crosshair reload.png
+        - Sprite: {fileID: 21300038, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+          FileName: FX/cursor/crosshair reload1.png
+        - Sprite: {fileID: 21300040, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+          FileName: FX/cursor/crosshair reload2.png
+        - Sprite: {fileID: 21300042, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+          FileName: FX/cursor/crosshair reload3.png
+        - Sprite: {fileID: 21300044, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+          FileName: FX/cursor/crosshair reload4.png
+        - Sprite: {fileID: 21300046, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+          FileName: FX/cursor/crosshair reload5.png
+        - Sprite: {fileID: 21300048, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+          FileName: FX/cursor/crosshair reload6.png
+        - Sprite: {fileID: 21300050, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+          FileName: FX/cursor/crosshair.png
+        - Sprite: {fileID: 21300052, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+          FileName: FX/cursor/no ammo.png
+      SpriteDescriptions:
+      - Sprite: {fileID: 21300032, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+        FileName: FX/blackhole 24x24.png
+      - Sprite: {fileID: 21300034, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+        FileName: FX/bullet.png
+      - Sprite: {fileID: 21300054, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+        FileName: FX/explosion middle.png
+      - Sprite: {fileID: 21300056, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+        FileName: FX/explosion.png
+      - Sprite: {fileID: 21300058, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+        FileName: FX/laser bullet.png
+      - Sprite: {fileID: 21300060, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+        FileName: FX/muzzle flash.png
+      - Sprite: {fileID: 21300062, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+        FileName: FX/shotgun bullet.png
+      - Sprite: {fileID: 21300064, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+        FileName: FX/sparkle.png
+      - Sprite: {fileID: 21300066, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+        FileName: FX/swipe.png
+    SpriteDescriptions:
+    - Sprite: {fileID: 21300012, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: alien1.png
+    - Sprite: {fileID: 21300018, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: ammo.png
+    - Sprite: {fileID: 21300020, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: beaver.png
+    - Sprite: {fileID: 21300022, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: bigrobot.png
+    - Sprite: {fileID: 21300024, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: controls.png
+    - Sprite: {fileID: 21300026, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: controls2.png
+    - Sprite: {fileID: 21300028, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: dam health gray tex.png
+    - Sprite: {fileID: 21300030, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: dam health.png
+    - Sprite: {fileID: 21300068, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: gun1.png
+    - Sprite: {fileID: 21300070, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: gun2.png
+    - Sprite: {fileID: 21300072, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: health.png
+    - Sprite: {fileID: 21300074, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: hero10000.png
+    - Sprite: {fileID: 21300076, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: machinegun.png
+    - Sprite: {fileID: 21300078, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: numbers1.png
+    - Sprite: {fileID: 21300080, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: numbers2.png
+    - Sprite: {fileID: 21300082, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: pistol reload.png
+    - Sprite: {fileID: 21300084, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: redneckret 40x30.png
+    - Sprite: {fileID: 21300086, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: reload anim.png
+    - Sprite: {fileID: 21300088, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: rifle.png
+    - Sprite: {fileID: 21300090, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: robotb.png
+    - Sprite: {fileID: 21300092, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: robotb2.png
+    - Sprite: {fileID: 21300094, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: shotgun_reload 20x20.png
+    - Sprite: {fileID: 21300096, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: ufo.png
+    - Sprite: {fileID: 21300098, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: ui bullets.png
+    - Sprite: {fileID: 21300100, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: ui gun s.png
+    - Sprite: {fileID: 21300102, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: ui gun.png
+    - Sprite: {fileID: 21300104, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: ui machinegun s.png
+    - Sprite: {fileID: 21300106, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: ui machinegun.png
+    - Sprite: {fileID: 21300108, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: ui rifle s.png
+    - Sprite: {fileID: 21300110, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: ui rifle.png
+    - Sprite: {fileID: 21300112, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: ui shotgun s.png
+    - Sprite: {fileID: 21300114, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: ui shotgun.png
+    - Sprite: {fileID: 21300116, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+      FileName: zombie1.png

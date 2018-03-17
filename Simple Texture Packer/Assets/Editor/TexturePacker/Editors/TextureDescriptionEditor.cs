@@ -29,7 +29,10 @@ namespace Editor.TexturePacker.Editors
 			EditorGUILayout.Space();
 			EditorGUILayout.Space();
 			if (_textureRepository.objectReferenceValue == null) GUI.enabled = false;
-			if (GUILayout.Button("Convert")) Transformation.Transformation.Transform(Target);
+			if (GUILayout.Button("Convert"))
+			{
+				using (var transformation = new Transformation.Transformation(Target)) transformation.Transform();
+			}
 			GUI.enabled = true;
 		}
 	}
