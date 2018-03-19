@@ -1,9 +1,8 @@
-﻿using System;
-using Editor.TexturePacker.DialogWindows;
+﻿using Editor.TexturePacker.DialogWindows;
 using Editor.TexturePacker.Domain;
 using Editor.TexturePacker.Repository;
+using Editor.TexturePacker.Windows;
 using Editor.Windows.DialogWindows;
-using TexturePacker.Domain;
 using UnityEditor;
 
 namespace Editor
@@ -11,6 +10,7 @@ namespace Editor
 	public static class MenuItems
 	{
 		private const string CreateMenu = "Assets/Create/Texture packer";
+		private const string TexturePacker = "Texture Packer";
 		
 		[MenuItem(CreateMenu + "/Texture Description", false, 1101)]
 		public static void CreateTextureDescription()
@@ -31,6 +31,12 @@ namespace Editor
 		public static void CreateTextureRepository()
 		{
 			var textureRepository = ObjectCreatorHelper.CreateAsset<TextureRepository>();
-		} 
+		}
+
+		[MenuItem(TexturePacker + "/Transfomartion Window", false, 0)]
+		public static void ShowTransformationWindow()
+		{
+			TransformationWindow.ShowSelf();
+		}
 	}
 }
