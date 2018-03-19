@@ -1,5 +1,8 @@
-﻿using Editor.TexturePacker.Domain;
+﻿using System;
+using Editor.TexturePacker.DialogWindows;
+using Editor.TexturePacker.Domain;
 using Editor.TexturePacker.Repository;
+using Editor.Windows.DialogWindows;
 using TexturePacker.Domain;
 using UnityEditor;
 
@@ -12,9 +15,18 @@ namespace Editor
 		[MenuItem(CreateMenu + "/Texture Description", false, 1101)]
 		public static void CreateTextureDescription()
 		{
-			ObjectCreatorHelper.CreateAsset<TextureDescription>();
-		} 
-		
+			Dialog.ShowDialog<CreateTextureDescriptionDialogWindow>("Create Texture Description Window", DialogType.YesNo)
+				.Yes += OnYesCreateTextureDescription;
+		}
+
+		private static void OnYesCreateTextureDescription(CreateTextureDescriptionDialogWindow window)
+		{
+			var textureDescription = ObjectCreatorHelper.CreateAsset<TextureDescription>(window.Name);
+			textureDescription.JsonDataFile = window.JsonDataFile;
+			textureDescription.Texture = window.Texture2D;
+			textureDescription.Name = window.Name;
+		}
+
 		[MenuItem(CreateMenu + "/Texture Repository", false, 1102)]
 		public static void CreateTextureRepository()
 		{

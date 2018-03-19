@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0a50992d36c4cfea741eb10d1f31a15, type: 3}
-  m_Name: Characters
+  m_Name: Character Texture Description
   m_EditorClassIdentifier: 
-  Name: Characters
+  Name: Character Texture Description
   JsonDataFile: {fileID: 4900000, guid: 8516ad4a2195aff4f89603827cb3ae79, type: 3}
   Texture: {fileID: 2800000, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
   TextureRepository: {fileID: 11400000, guid: 0d212f964bf5eec4fb268a69ba6fb07a, type: 2}
