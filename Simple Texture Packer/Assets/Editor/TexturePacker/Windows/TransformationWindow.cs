@@ -22,6 +22,8 @@ namespace Editor.TexturePacker.Windows
 		private List<TextureRepository> _textureRepositories;
 		private string[] _textureRepositoryNames;
 		private TextureRepository _targetTextureRepository;
+		private string _outputlog;
+		private Vector2 _outputlogScroll;
 
 		public static void ShowSelf()
 		{
@@ -42,6 +44,7 @@ namespace Editor.TexturePacker.Windows
 				EditorGUILayout.HelpBox("Select target Texture Repository or create new one", MessageType.Warning);
 			}
 			DrawTargetRepositoryInspector();
+			DrawOutputlogEditor();
 		}
 
 		private void Init()
@@ -125,7 +128,9 @@ namespace Editor.TexturePacker.Windows
 		private void TransformTextureDescription(TextureDescription textureDescription)
 		{
 			textureDescription.TransformationDate = DateTime.Now.ToString(DateTimeFormat);
+			_outputlog = Transformation.Transformation.Transform(textureDescription, _targetTextureRepository);
 			EditorUtility.SetDirty(textureDescription);
+			EditorUtility.SetDirty(_targetTextureRepository);
 		}
 
 		private void DrawTargetRepositoryInspector()
@@ -138,6 +143,13 @@ namespace Editor.TexturePacker.Windows
 			var index = _textureRepositories.IndexOf(_targetTextureRepository);
 			index = EditorGUILayout.Popup("Target texture repository", index, _textureRepositoryNames);
 			_targetTextureRepository = _textureRepositories[index];
+		}
+
+		private void DrawOutputlogEditor()
+		{
+			_outputlogScroll = EditorGUILayout.BeginScrollView(_outputlogScroll, GUI.skin.box);
+			EditorGUILayout.LabelField(_outputlog, GUILayout.Height(_outputlog.Count(x=>x.Equals('\n')) * EditorGUIUtility.singleLineHeight));
+			EditorGUILayout.EndScrollView();
 		}
 	}
 }

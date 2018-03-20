@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Name: Enemies
   m_EditorClassIdentifier: 
   Name: Enemies
-  TransformationDate: 2018-03-19 20:10
-  JsonDataFile: {fileID: 4900000, guid: 8516ad4a2195aff4f89603827cb3ae79, type: 3}
-  Texture: {fileID: 2800000, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-  TextureRepository: {fileID: 0}
+  TransformationDate: 2018-03-20 14:55
+  JsonDataFile: {fileID: 4900000, guid: 9a7edf7499ac9474fbaab56db799b457, type: 3}
+  Texture: {fileID: 2800000, guid: e727ef1ed4d117e43b917af9d7a1bcd7, type: 3}

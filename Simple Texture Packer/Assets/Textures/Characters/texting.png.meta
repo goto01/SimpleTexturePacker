@@ -163,6 +163,16 @@ TextureImporter:
     21300312: ui shotgun s.png
     21300314: ui shotgun.png
     21300316: zombie1.png
+    21300318: FX/Test sprites/Tile_0.png
+    21300320: FX/Test sprites/Tile_1.png
+    21300322: FX/Test sprites/Tile_2.png
+    21300324: FX/Test sprites/Tile_3.png
+    21300326: FX/Test sprites/Tile_4.png
+    21300328: FX/Test sprites/Tile_5.png
+    21300330: FX/Test sprites/Tile_6.png
+    21300332: FX/Test sprites/Tile_7.png
+    21300334: FX/Test sprites/Tile_8.png
+    21300336: FX/Test sprites/Tile_9.png
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -242,8 +252,8 @@ TextureImporter:
       name: alien1.png
       rect:
         serializedVersion: 2
-        x: 480
-        y: 630
+        x: 96
+        y: 656
         width: 96
         height: 24
       alignment: 9
@@ -256,8 +266,8 @@ TextureImporter:
       name: ammo.png
       rect:
         serializedVersion: 2
-        x: 576
-        y: 630
+        x: 432
+        y: 656
         width: 24
         height: 24
       alignment: 9
@@ -270,8 +280,8 @@ TextureImporter:
       name: beaver.png
       rect:
         serializedVersion: 2
-        x: 0
-        y: 384
+        x: 774
+        y: 480
         width: 144
         height: 96
       alignment: 9
@@ -284,8 +294,8 @@ TextureImporter:
       name: bigrobot.png
       rect:
         serializedVersion: 2
-        x: 630
-        y: 504
+        x: 246
+        y: 528
         width: 192
         height: 48
       alignment: 9
@@ -298,7 +308,7 @@ TextureImporter:
       name: controls.png
       rect:
         serializedVersion: 2
-        x: 344
+        x: 200
         y: 0
         width: 640
         height: 480
@@ -312,7 +322,7 @@ TextureImporter:
       name: controls2.png
       rect:
         serializedVersion: 2
-        x: 144
+        x: 0
         y: 370
         width: 200
         height: 110
@@ -327,7 +337,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 170
-        y: 665
+        y: 691
         width: 148
         height: 13
       alignment: 9
@@ -340,8 +350,8 @@ TextureImporter:
       name: dam health.png
       rect:
         serializedVersion: 2
-        x: 432
-        y: 504
+        x: 96
+        y: 528
         width: 150
         height: 48
       alignment: 9
@@ -355,7 +365,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 606
+        y: 632
         width: 336
         height: 24
       alignment: 9
@@ -368,8 +378,8 @@ TextureImporter:
       name: FX/bullet.png
       rect:
         serializedVersion: 2
-        x: 518
-        y: 658
+        x: 678
+        y: 684
         width: 20
         height: 20
       alignment: 9
@@ -382,8 +392,8 @@ TextureImporter:
       name: FX/cursor/crosshair reload.png
       rect:
         serializedVersion: 2
-        x: 696
-        y: 630
+        x: 360
+        y: 632
         width: 144
         height: 24
       alignment: 9
@@ -397,7 +407,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 552
+        y: 576
         width: 48
         height: 48
       alignment: 9
@@ -410,8 +420,8 @@ TextureImporter:
       name: FX/cursor/crosshair reload2.png
       rect:
         serializedVersion: 2
-        x: 560
-        y: 552
+        x: 486
+        y: 528
         width: 48
         height: 48
       alignment: 9
@@ -424,8 +434,8 @@ TextureImporter:
       name: FX/cursor/crosshair reload3.png
       rect:
         serializedVersion: 2
-        x: 464
-        y: 552
+        x: 582
+        y: 528
         width: 48
         height: 48
       alignment: 9
@@ -438,8 +448,8 @@ TextureImporter:
       name: FX/cursor/crosshair reload4.png
       rect:
         serializedVersion: 2
-        x: 416
-        y: 552
+        x: 630
+        y: 528
         width: 48
         height: 48
       alignment: 9
@@ -452,8 +462,8 @@ TextureImporter:
       name: FX/cursor/crosshair reload5.png
       rect:
         serializedVersion: 2
-        x: 320
-        y: 552
+        x: 534
+        y: 528
         width: 48
         height: 48
       alignment: 9
@@ -466,8 +476,8 @@ TextureImporter:
       name: FX/cursor/crosshair reload6.png
       rect:
         serializedVersion: 2
-        x: 368
-        y: 552
+        x: 0
+        y: 528
         width: 48
         height: 48
       alignment: 9
@@ -480,8 +490,8 @@ TextureImporter:
       name: FX/cursor/crosshair.png
       rect:
         serializedVersion: 2
-        x: 822
-        y: 504
+        x: 438
+        y: 528
         width: 48
         height: 48
       alignment: 9
@@ -494,8 +504,8 @@ TextureImporter:
       name: FX/cursor/no ammo.png
       rect:
         serializedVersion: 2
-        x: 582
-        y: 504
+        x: 48
+        y: 528
         width: 48
         height: 48
       alignment: 9
@@ -508,8 +518,8 @@ TextureImporter:
       name: FX/explosion middle.png
       rect:
         serializedVersion: 2
-        x: 0
-        y: 568
+        x: 192
+        y: 592
         width: 320
         height: 32
       alignment: 9
@@ -522,8 +532,8 @@ TextureImporter:
       name: FX/explosion.png
       rect:
         serializedVersion: 2
-        x: 336
-        y: 606
+        x: 192
+        y: 656
         width: 240
         height: 24
       alignment: 9
@@ -536,8 +546,8 @@ TextureImporter:
       name: FX/laser bullet.png
       rect:
         serializedVersion: 2
-        x: 678
-        y: 658
+        x: 318
+        y: 684
         width: 20
         height: 20
       alignment: 9
@@ -550,8 +560,8 @@ TextureImporter:
       name: FX/muzzle flash.png
       rect:
         serializedVersion: 2
-        x: 718
-        y: 658
+        x: 698
+        y: 684
         width: 20
         height: 20
       alignment: 9
@@ -564,8 +574,8 @@ TextureImporter:
       name: FX/shotgun bullet.png
       rect:
         serializedVersion: 2
-        x: 698
-        y: 658
+        x: 758
+        y: 684
         width: 20
         height: 20
       alignment: 9
@@ -578,8 +588,8 @@ TextureImporter:
       name: FX/sparkle.png
       rect:
         serializedVersion: 2
-        x: 600
-        y: 630
+        x: 802
+        y: 680
         width: 96
         height: 24
       alignment: 9
@@ -592,10 +602,150 @@ TextureImporter:
       name: FX/swipe.png
       rect:
         serializedVersion: 2
-        x: 760
-        y: 600
+        x: 504
+        y: 626
         width: 160
         height: 30
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: FX/Test sprites/Tile_0.png
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 624
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: FX/Test sprites/Tile_1.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 592
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: FX/Test sprites/Tile_2.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 592
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: FX/Test sprites/Tile_3.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 592
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: FX/Test sprites/Tile_4.png
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 592
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: FX/Test sprites/Tile_5.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 592
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: FX/Test sprites/Tile_6.png
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 624
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: FX/Test sprites/Tile_7.png
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 624
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: FX/Test sprites/Tile_8.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 592
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: FX/Test sprites/Tile_9.png
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 624
+        width: 32
+        height: 32
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -606,8 +756,8 @@ TextureImporter:
       name: gun1.png
       rect:
         serializedVersion: 2
-        x: 738
-        y: 658
+        x: 718
+        y: 684
         width: 20
         height: 20
       alignment: 9
@@ -620,8 +770,8 @@ TextureImporter:
       name: gun2.png
       rect:
         serializedVersion: 2
-        x: 758
-        y: 658
+        x: 738
+        y: 684
         width: 20
         height: 20
       alignment: 9
@@ -634,8 +784,8 @@ TextureImporter:
       name: health.png
       rect:
         serializedVersion: 2
-        x: 826
-        y: 654
+        x: 778
+        y: 680
         width: 24
         height: 24
       alignment: 9
@@ -648,8 +798,8 @@ TextureImporter:
       name: hero10000.png
       rect:
         serializedVersion: 2
-        x: 850
-        y: 654
+        x: 0
+        y: 656
         width: 96
         height: 24
       alignment: 9
@@ -662,8 +812,8 @@ TextureImporter:
       name: machinegun.png
       rect:
         serializedVersion: 2
-        x: 802
-        y: 654
+        x: 898
+        y: 680
         width: 24
         height: 24
       alignment: 9
@@ -677,7 +827,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 669
+        y: 695
         width: 60
         height: 9
       alignment: 9
@@ -690,8 +840,8 @@ TextureImporter:
       name: numbers2.png
       rect:
         serializedVersion: 2
-        x: 100
-        y: 668
+        x: 60
+        y: 694
         width: 70
         height: 10
       alignment: 9
@@ -705,7 +855,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 538
-        y: 658
+        y: 684
         width: 140
         height: 20
       alignment: 9
@@ -718,8 +868,8 @@ TextureImporter:
       name: redneckret 40x30.png
       rect:
         serializedVersion: 2
-        x: 600
-        y: 600
+        x: 688
+        y: 626
         width: 160
         height: 30
       alignment: 9
@@ -732,8 +882,8 @@ TextureImporter:
       name: reload anim.png
       rect:
         serializedVersion: 2
-        x: 60
-        y: 668
+        x: 130
+        y: 694
         width: 40
         height: 10
       alignment: 9
@@ -746,8 +896,8 @@ TextureImporter:
       name: rifle.png
       rect:
         serializedVersion: 2
-        x: 360
-        y: 630
+        x: 696
+        y: 656
         width: 24
         height: 24
       alignment: 9
@@ -760,8 +910,8 @@ TextureImporter:
       name: robotb.png
       rect:
         serializedVersion: 2
-        x: 144
-        y: 630
+        x: 744
+        y: 656
         width: 216
         height: 24
       alignment: 9
@@ -774,8 +924,8 @@ TextureImporter:
       name: robotb2.png
       rect:
         serializedVersion: 2
-        x: 0
-        y: 504
+        x: 560
+        y: 576
         width: 432
         height: 48
       alignment: 9
@@ -788,8 +938,8 @@ TextureImporter:
       name: shotgun_reload 20x20.png
       rect:
         serializedVersion: 2
-        x: 318
-        y: 658
+        x: 338
+        y: 684
         width: 200
         height: 20
       alignment: 9
@@ -802,8 +952,8 @@ TextureImporter:
       name: ufo.png
       rect:
         serializedVersion: 2
-        x: 870
-        y: 480
+        x: 678
+        y: 504
         width: 96
         height: 72
       alignment: 9
@@ -816,8 +966,8 @@ TextureImporter:
       name: ui bullets.png
       rect:
         serializedVersion: 2
-        x: 576
-        y: 600
+        x: 664
+        y: 626
         width: 24
         height: 30
       alignment: 9
@@ -830,8 +980,8 @@ TextureImporter:
       name: ui gun s.png
       rect:
         serializedVersion: 2
-        x: 96
-        y: 630
+        x: 720
+        y: 656
         width: 24
         height: 24
       alignment: 9
@@ -844,8 +994,8 @@ TextureImporter:
       name: ui gun.png
       rect:
         serializedVersion: 2
-        x: 72
-        y: 630
+        x: 672
+        y: 656
         width: 24
         height: 24
       alignment: 9
@@ -858,8 +1008,8 @@ TextureImporter:
       name: ui machinegun s.png
       rect:
         serializedVersion: 2
-        x: 24
-        y: 630
+        x: 600
+        y: 656
         width: 24
         height: 24
       alignment: 9
@@ -872,8 +1022,8 @@ TextureImporter:
       name: ui machinegun.png
       rect:
         serializedVersion: 2
-        x: 0
-        y: 630
+        x: 648
+        y: 656
         width: 24
         height: 24
       alignment: 9
@@ -886,8 +1036,8 @@ TextureImporter:
       name: ui rifle s.png
       rect:
         serializedVersion: 2
-        x: 946
-        y: 654
+        x: 624
+        y: 656
         width: 24
         height: 24
       alignment: 9
@@ -900,8 +1050,8 @@ TextureImporter:
       name: ui rifle.png
       rect:
         serializedVersion: 2
-        x: 48
-        y: 630
+        x: 576
+        y: 656
         width: 24
         height: 24
       alignment: 9
@@ -914,8 +1064,8 @@ TextureImporter:
       name: ui shotgun s.png
       rect:
         serializedVersion: 2
-        x: 778
-        y: 654
+        x: 552
+        y: 656
         width: 24
         height: 24
       alignment: 9
@@ -928,8 +1078,8 @@ TextureImporter:
       name: ui shotgun.png
       rect:
         serializedVersion: 2
-        x: 120
-        y: 630
+        x: 336
+        y: 632
         width: 24
         height: 24
       alignment: 9
@@ -942,8 +1092,8 @@ TextureImporter:
       name: zombie1.png
       rect:
         serializedVersion: 2
-        x: 384
-        y: 630
+        x: 456
+        y: 656
         width: 96
         height: 24
       alignment: 9

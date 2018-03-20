@@ -2,7 +2,7 @@
 
 {
 	"filename": "alien1.png",
-	"frame": {"x":480,"y":24,"w":96,"h":24},
+	"frame": {"x":96,"y":24,"w":96,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":24},
@@ -11,7 +11,7 @@
 },
 {
 	"filename": "ammo.png",
-	"frame": {"x":576,"y":24,"w":24,"h":24},
+	"frame": {"x":432,"y":24,"w":24,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
@@ -20,7 +20,7 @@
 },
 {
 	"filename": "beaver.png",
-	"frame": {"x":0,"y":198,"w":144,"h":96},
+	"frame": {"x":774,"y":128,"w":144,"h":96},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":144,"h":96},
@@ -29,7 +29,7 @@
 },
 {
 	"filename": "bigrobot.png",
-	"frame": {"x":630,"y":126,"w":192,"h":48},
+	"frame": {"x":246,"y":128,"w":192,"h":48},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":192,"h":48},
@@ -38,7 +38,7 @@
 },
 {
 	"filename": "controls.png",
-	"frame": {"x":344,"y":198,"w":640,"h":480},
+	"frame": {"x":200,"y":224,"w":640,"h":480},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":640,"h":480},
@@ -47,7 +47,7 @@
 },
 {
 	"filename": "controls2.png",
-	"frame": {"x":144,"y":198,"w":200,"h":110},
+	"frame": {"x":0,"y":224,"w":200,"h":110},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":110},
@@ -65,7 +65,7 @@
 },
 {
 	"filename": "dam health.png",
-	"frame": {"x":432,"y":126,"w":150,"h":48},
+	"frame": {"x":96,"y":128,"w":150,"h":48},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":48},
@@ -83,114 +83,6 @@
 },
 {
 	"filename": "FX/bullet.png",
-	"frame": {"x":518,"y":0,"w":20,"h":20},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
-	"sourceSize": {"w":20,"h":20},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "FX/cursor/crosshair reload.png",
-	"frame": {"x":696,"y":24,"w":144,"h":24},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":144,"h":24},
-	"sourceSize": {"w":144,"h":24},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "FX/cursor/crosshair reload1.png",
-	"frame": {"x":512,"y":78,"w":48,"h":48},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
-	"sourceSize": {"w":48,"h":48},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "FX/cursor/crosshair reload2.png",
-	"frame": {"x":560,"y":78,"w":48,"h":48},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
-	"sourceSize": {"w":48,"h":48},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "FX/cursor/crosshair reload3.png",
-	"frame": {"x":464,"y":78,"w":48,"h":48},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
-	"sourceSize": {"w":48,"h":48},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "FX/cursor/crosshair reload4.png",
-	"frame": {"x":416,"y":78,"w":48,"h":48},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
-	"sourceSize": {"w":48,"h":48},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "FX/cursor/crosshair reload5.png",
-	"frame": {"x":320,"y":78,"w":48,"h":48},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
-	"sourceSize": {"w":48,"h":48},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "FX/cursor/crosshair reload6.png",
-	"frame": {"x":368,"y":78,"w":48,"h":48},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
-	"sourceSize": {"w":48,"h":48},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "FX/cursor/crosshair.png",
-	"frame": {"x":822,"y":126,"w":48,"h":48},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
-	"sourceSize": {"w":48,"h":48},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "FX/cursor/no ammo.png",
-	"frame": {"x":582,"y":126,"w":48,"h":48},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
-	"sourceSize": {"w":48,"h":48},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "FX/explosion middle.png",
-	"frame": {"x":0,"y":78,"w":320,"h":32},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":320,"h":32},
-	"sourceSize": {"w":320,"h":32},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "FX/explosion.png",
-	"frame": {"x":336,"y":48,"w":240,"h":24},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":24},
-	"sourceSize": {"w":240,"h":24},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "FX/laser bullet.png",
 	"frame": {"x":678,"y":0,"w":20,"h":20},
 	"rotated": false,
 	"trimmed": false,
@@ -199,8 +91,107 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "FX/muzzle flash.png",
-	"frame": {"x":718,"y":0,"w":20,"h":20},
+	"filename": "FX/cursor/crosshair reload.png",
+	"frame": {"x":360,"y":48,"w":144,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":144,"h":24},
+	"sourceSize": {"w":144,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/cursor/crosshair reload1.png",
+	"frame": {"x":512,"y":80,"w":48,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
+	"sourceSize": {"w":48,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/cursor/crosshair reload2.png",
+	"frame": {"x":486,"y":128,"w":48,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
+	"sourceSize": {"w":48,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/cursor/crosshair reload3.png",
+	"frame": {"x":582,"y":128,"w":48,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
+	"sourceSize": {"w":48,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/cursor/crosshair reload4.png",
+	"frame": {"x":630,"y":128,"w":48,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
+	"sourceSize": {"w":48,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/cursor/crosshair reload5.png",
+	"frame": {"x":534,"y":128,"w":48,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
+	"sourceSize": {"w":48,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/cursor/crosshair reload6.png",
+	"frame": {"x":0,"y":128,"w":48,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
+	"sourceSize": {"w":48,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/cursor/crosshair.png",
+	"frame": {"x":438,"y":128,"w":48,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
+	"sourceSize": {"w":48,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/cursor/no ammo.png",
+	"frame": {"x":48,"y":128,"w":48,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
+	"sourceSize": {"w":48,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/explosion middle.png",
+	"frame": {"x":192,"y":80,"w":320,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":320,"h":32},
+	"sourceSize": {"w":320,"h":32},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/explosion.png",
+	"frame": {"x":192,"y":24,"w":240,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":24},
+	"sourceSize": {"w":240,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/laser bullet.png",
+	"frame": {"x":318,"y":0,"w":20,"h":20},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
@@ -208,7 +199,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "FX/shotgun bullet.png",
+	"filename": "FX/muzzle flash.png",
 	"frame": {"x":698,"y":0,"w":20,"h":20},
 	"rotated": false,
 	"trimmed": false,
@@ -217,34 +208,7 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
-	"filename": "FX/sparkle.png",
-	"frame": {"x":600,"y":24,"w":96,"h":24},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":24},
-	"sourceSize": {"w":96,"h":24},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "FX/swipe.png",
-	"frame": {"x":760,"y":48,"w":160,"h":30},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":160,"h":30},
-	"sourceSize": {"w":160,"h":30},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "gun1.png",
-	"frame": {"x":738,"y":0,"w":20,"h":20},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
-	"sourceSize": {"w":20,"h":20},
-	"pivot": {"x":0.5,"y":0.5}
-},
-{
-	"filename": "gun2.png",
+	"filename": "FX/shotgun bullet.png",
 	"frame": {"x":758,"y":0,"w":20,"h":20},
 	"rotated": false,
 	"trimmed": false,
@@ -253,8 +217,134 @@
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
+	"filename": "FX/sparkle.png",
+	"frame": {"x":802,"y":0,"w":96,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":24},
+	"sourceSize": {"w":96,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/swipe.png",
+	"frame": {"x":504,"y":48,"w":160,"h":30},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":160,"h":30},
+	"sourceSize": {"w":160,"h":30},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/Test sprites/Tile_0.png",
+	"frame": {"x":848,"y":48,"w":32,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/Test sprites/Tile_1.png",
+	"frame": {"x":64,"y":80,"w":32,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/Test sprites/Tile_2.png",
+	"frame": {"x":128,"y":80,"w":32,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/Test sprites/Tile_3.png",
+	"frame": {"x":96,"y":80,"w":32,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/Test sprites/Tile_4.png",
+	"frame": {"x":160,"y":80,"w":32,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/Test sprites/Tile_5.png",
+	"frame": {"x":32,"y":80,"w":32,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/Test sprites/Tile_6.png",
+	"frame": {"x":880,"y":48,"w":32,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/Test sprites/Tile_7.png",
+	"frame": {"x":912,"y":48,"w":32,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/Test sprites/Tile_8.png",
+	"frame": {"x":0,"y":80,"w":32,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "FX/Test sprites/Tile_9.png",
+	"frame": {"x":944,"y":48,"w":32,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gun1.png",
+	"frame": {"x":718,"y":0,"w":20,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
+	"sourceSize": {"w":20,"h":20},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "gun2.png",
+	"frame": {"x":738,"y":0,"w":20,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
+	"sourceSize": {"w":20,"h":20},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
 	"filename": "health.png",
-	"frame": {"x":826,"y":0,"w":24,"h":24},
+	"frame": {"x":778,"y":0,"w":24,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
@@ -263,7 +353,7 @@
 },
 {
 	"filename": "hero10000.png",
-	"frame": {"x":850,"y":0,"w":96,"h":24},
+	"frame": {"x":0,"y":24,"w":96,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":24},
@@ -272,7 +362,7 @@
 },
 {
 	"filename": "machinegun.png",
-	"frame": {"x":802,"y":0,"w":24,"h":24},
+	"frame": {"x":898,"y":0,"w":24,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
@@ -290,7 +380,7 @@
 },
 {
 	"filename": "numbers2.png",
-	"frame": {"x":100,"y":0,"w":70,"h":10},
+	"frame": {"x":60,"y":0,"w":70,"h":10},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":10},
@@ -308,7 +398,7 @@
 },
 {
 	"filename": "redneckret 40x30.png",
-	"frame": {"x":600,"y":48,"w":160,"h":30},
+	"frame": {"x":688,"y":48,"w":160,"h":30},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":160,"h":30},
@@ -317,7 +407,7 @@
 },
 {
 	"filename": "reload anim.png",
-	"frame": {"x":60,"y":0,"w":40,"h":10},
+	"frame": {"x":130,"y":0,"w":40,"h":10},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":40,"h":10},
@@ -326,7 +416,7 @@
 },
 {
 	"filename": "rifle.png",
-	"frame": {"x":360,"y":24,"w":24,"h":24},
+	"frame": {"x":696,"y":24,"w":24,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
@@ -335,7 +425,7 @@
 },
 {
 	"filename": "robotb.png",
-	"frame": {"x":144,"y":24,"w":216,"h":24},
+	"frame": {"x":744,"y":24,"w":216,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":216,"h":24},
@@ -344,7 +434,7 @@
 },
 {
 	"filename": "robotb2.png",
-	"frame": {"x":0,"y":126,"w":432,"h":48},
+	"frame": {"x":560,"y":80,"w":432,"h":48},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":432,"h":48},
@@ -353,7 +443,7 @@
 },
 {
 	"filename": "shotgun_reload 20x20.png",
-	"frame": {"x":318,"y":0,"w":200,"h":20},
+	"frame": {"x":338,"y":0,"w":200,"h":20},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":20},
@@ -362,7 +452,7 @@
 },
 {
 	"filename": "ufo.png",
-	"frame": {"x":870,"y":126,"w":96,"h":72},
+	"frame": {"x":678,"y":128,"w":96,"h":72},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":72},
@@ -371,7 +461,7 @@
 },
 {
 	"filename": "ui bullets.png",
-	"frame": {"x":576,"y":48,"w":24,"h":30},
+	"frame": {"x":664,"y":48,"w":24,"h":30},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":30},
@@ -380,7 +470,7 @@
 },
 {
 	"filename": "ui gun s.png",
-	"frame": {"x":96,"y":24,"w":24,"h":24},
+	"frame": {"x":720,"y":24,"w":24,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
@@ -389,7 +479,7 @@
 },
 {
 	"filename": "ui gun.png",
-	"frame": {"x":72,"y":24,"w":24,"h":24},
+	"frame": {"x":672,"y":24,"w":24,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
@@ -398,7 +488,7 @@
 },
 {
 	"filename": "ui machinegun s.png",
-	"frame": {"x":24,"y":24,"w":24,"h":24},
+	"frame": {"x":600,"y":24,"w":24,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
@@ -407,7 +497,7 @@
 },
 {
 	"filename": "ui machinegun.png",
-	"frame": {"x":0,"y":24,"w":24,"h":24},
+	"frame": {"x":648,"y":24,"w":24,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
@@ -416,7 +506,7 @@
 },
 {
 	"filename": "ui rifle s.png",
-	"frame": {"x":946,"y":0,"w":24,"h":24},
+	"frame": {"x":624,"y":24,"w":24,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
@@ -425,7 +515,7 @@
 },
 {
 	"filename": "ui rifle.png",
-	"frame": {"x":48,"y":24,"w":24,"h":24},
+	"frame": {"x":576,"y":24,"w":24,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
@@ -434,7 +524,7 @@
 },
 {
 	"filename": "ui shotgun s.png",
-	"frame": {"x":778,"y":0,"w":24,"h":24},
+	"frame": {"x":552,"y":24,"w":24,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
@@ -443,7 +533,7 @@
 },
 {
 	"filename": "ui shotgun.png",
-	"frame": {"x":120,"y":24,"w":24,"h":24},
+	"frame": {"x":336,"y":48,"w":24,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
@@ -452,7 +542,7 @@
 },
 {
 	"filename": "zombie1.png",
-	"frame": {"x":384,"y":24,"w":96,"h":24},
+	"frame": {"x":456,"y":24,"w":96,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":24},
@@ -464,8 +554,8 @@
 	"version": "1.0",
 	"image": "texting.png",
 	"format": "RGBA8888",
-	"size": {"w":984,"h":678},
+	"size": {"w":992,"h":704},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:a4a5b6e3d5333d0621c64309c37106da:2fc190f10d1ba3b845b24930dc3050db:32954549f9d89fda9be77d06317c0a57$"
+	"smartupdate": "$TexturePacker:SmartUpdate:afc329e37062aafb6c8d4543aa70a58f:ebca2d228776974e2373a13880d4d98d:32954549f9d89fda9be77d06317c0a57$"
 }
 }

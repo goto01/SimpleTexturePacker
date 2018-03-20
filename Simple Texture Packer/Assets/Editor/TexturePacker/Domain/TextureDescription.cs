@@ -9,6 +9,5 @@ namespace Editor.TexturePacker.Domain
 		public string TransformationDate;
 		public TextAsset JsonDataFile;
 		public Texture2D Texture;
-		public TextureRepository TextureRepository;
 	}
 }
