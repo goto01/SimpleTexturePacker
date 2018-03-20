@@ -1,11 +1,9 @@
 ﻿using Editor.TexturePacker.DialogWindows;
 using Editor.TexturePacker.Domain;
-using Editor.TexturePacker.Publishing;
 using Editor.TexturePacker.Repository;
 using Editor.TexturePacker.Windows;
 using Editor.Windows.DialogWindows;
 using UnityEditor;
-using UnityEditor.LinuxStandalone;
 
 namespace Editor
 {
@@ -13,6 +11,7 @@ namespace Editor
 	{
 		private const string CreateMenu = "Assets/Create/Texture packer";
 		private const string TexturePacker = "Texture Packer";
+		private const string TexturePackerPublishing = "Texture Packer/Publishing";
 		
 		[MenuItem(CreateMenu + "/Texture Description", false, 1101)]
 		public static void CreateTextureDescription()
@@ -47,11 +46,16 @@ namespace Editor
 			TextureRepositoryBrowserWindow.ShowSelf();
 		}
 
-		[MenuItem(TexturePacker + "/Publish", false, 0)]
+		[MenuItem(TexturePackerPublishing + "/Publish Settings", false, 0)]
+		public static void ShowPublishSettingsWindow()
+		{
+			PublishSettingsWindow.ShowSelf();
+		}
+
+		[MenuItem(TexturePackerPublishing + "/Publish", false, 0)]
 		public static void Publish()
 		{
-			TexturePackerPublishing.Publish("d:/Soft/Texture packer/bin/TexturePacker", "/Textures/texting{n}.png",
-				"/Textures/texting{n}.json", "d:/Unity/SimpleTexturePacker/Characters/");
+			Editor.TexturePacker.Publishing.TexturePackerPublishing.Publish();
 		}
 	}
 }
