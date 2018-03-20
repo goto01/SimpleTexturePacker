@@ -1,9 +1,11 @@
 ﻿using Editor.TexturePacker.DialogWindows;
 using Editor.TexturePacker.Domain;
+using Editor.TexturePacker.Publishing;
 using Editor.TexturePacker.Repository;
 using Editor.TexturePacker.Windows;
 using Editor.Windows.DialogWindows;
 using UnityEditor;
+using UnityEditor.LinuxStandalone;
 
 namespace Editor
 {
@@ -43,6 +45,13 @@ namespace Editor
 		public static void ShowTextureRepositoryBrowserWindow()
 		{
 			TextureRepositoryBrowserWindow.ShowSelf();
+		}
+
+		[MenuItem(TexturePacker + "/Publish", false, 0)]
+		public static void Publish()
+		{
+			TexturePackerPublishing.Publish("d:/Soft/Texture packer/bin/TexturePacker", "/Textures/texting{n}.png",
+				"/Textures/texting{n}.json", "d:/Unity/SimpleTexturePacker/Characters/");
 		}
 	}
 }
