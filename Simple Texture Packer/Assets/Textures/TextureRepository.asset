@@ -40,6 +40,7 @@ MonoBehaviour:
           FileName: FX/cursor/crosshair.png
         - Sprite: {fileID: 21300052, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
           FileName: FX/cursor/no ammo.png
+        Collapsed: 1
       - Name: Test sprites
         Depth: 2
         Folders: []
@@ -64,6 +65,7 @@ MonoBehaviour:
           FileName: FX/Test sprites/Tile_8.png
         - Sprite: {fileID: 21300336, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
           FileName: FX/Test sprites/Tile_9.png
+        Collapsed: 1
       SpriteDescriptions:
       - Sprite: {fileID: 21300032, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
         FileName: FX/blackhole 24x24.png
@@ -83,6 +85,7 @@ MonoBehaviour:
         FileName: FX/sparkle.png
       - Sprite: {fileID: 21300066, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
         FileName: FX/swipe.png
+      Collapsed: 0
     SpriteDescriptions:
     - Sprite: {fileID: 21300012, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
       FileName: alien1.png
@@ -150,3 +153,4 @@ MonoBehaviour:
       FileName: ui shotgun.png
     - Sprite: {fileID: 21300116, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
       FileName: zombie1.png
+    Collapsed: 0

@@ -8,5 +8,7 @@ namespace Editor.TexturePacker.Repository
 	{
 		public Sprite Sprite;
 		public string FileName;
+
+		public float Height;
 	}
 }

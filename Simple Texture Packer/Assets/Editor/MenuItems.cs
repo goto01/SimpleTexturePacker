@@ -38,5 +38,11 @@ namespace Editor
 		{
 			TransformationWindow.ShowSelf();
 		}
+
+		[MenuItem(TexturePacker + "/Texture Repository Browser Window", false, 0)]
+		public static void ShowTextureRepositoryBrowserWindow()
+		{
+			TextureRepositoryBrowserWindow.ShowSelf();
+		}
 	}
 }
