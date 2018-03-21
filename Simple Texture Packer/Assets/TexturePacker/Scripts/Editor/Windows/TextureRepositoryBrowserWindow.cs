@@ -119,12 +119,16 @@ namespace TexturePacker.Editor.Windows
 				GUILayout.Space(depth * IndentWidth);
 				GUILayout.Label(index == folder.SpriteDescriptions.Count-1 ? LastItemPrefix : SimpleItemPrefix, GUILayout.Width(IndentWidth));
 				if (!CheckForSelection(spriteDescription)) GUI.color = _defaultLabelColor;
+				EditorGUILayout.BeginHorizontal();
 				if (GUILayout.Button(spriteDescription.FileName, GUI.skin.label))
 				{
 					if (_ctrlPressed) SelectSprite(spriteDescription);
 					else SelectSpriteOnly(spriteDescription);
 				}
 				GUI.color = Color.white;
+				GUILayout.FlexibleSpace();
+				if (GUILayout.Button("Set sprite", EditorStyles.miniButton, GUILayout.Width(70))) SetSprite(spriteDescription.Sprite);
+				EditorGUILayout.EndHorizontal();
 				EditorGUILayout.EndHorizontal();
 			}
 		}
@@ -159,12 +163,14 @@ namespace TexturePacker.Editor.Windows
 				return;
 			}
 			_selectedSprites.Add(spriteDescription);
+			Repaint();
 		}
 
 		private void SelectSpriteOnly(SpriteDescription spriteDescription)
 		{
 			_selectedSprites.Clear();
 			_selectedSprites.Add(spriteDescription);
+			Repaint();
 		}
 
 		private void SelectSprites(List<SpriteDescription> spriteDescriptions)
@@ -190,6 +196,14 @@ namespace TexturePacker.Editor.Windows
 					if (Event.current.keyCode == KeyCode.LeftControl) _ctrlPressed = false;
 					break;
 			}
+		}
+
+		private void SetSprite(Sprite sprite)
+		{
+			if (Selection.activeObject == null) return;
+			var spriteRenderer = Selection.activeGameObject.GetComponent<SpriteRenderer>();
+			if (spriteRenderer == null) return;
+			spriteRenderer.sprite = sprite;
 		}
 	}
 }

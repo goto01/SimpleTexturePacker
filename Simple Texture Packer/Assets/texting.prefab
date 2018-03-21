@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4132644623869060}
   - component: {fileID: 212774066296097924}
-  - component: {fileID: 114920217651199332}
   m_Layer: 0
   m_Name: texting
   m_TagString: Untagged
@@ -41,18 +40,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0.7, y: 0, z: 0}
---- !u!114 &114920217651199332
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1862238134340074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ce2c07c83623094e8de091ed4f33663, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _spriteRenderer: {fileID: 212774066296097924}
 --- !u!212 &212774066296097924
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -87,12 +74,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300100, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
+  m_Sprite: {fileID: 21300032, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.625, y: 0.40625}
+  m_Size: {x: 3, y: 0.75}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
