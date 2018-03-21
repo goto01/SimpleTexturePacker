@@ -1,5 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using Editor;
+using Editor.Windows.DialogWindows;
+using TexturePacker.Editor.Animation;
 using TexturePacker.Editor.Repository;
 using UnityEditor;
 using UnityEngine;
@@ -108,6 +112,7 @@ namespace TexturePacker.Editor.Windows
 				GUILayout.Space(depth * IndentWidth);
 				GUILayout.Label(SimpleItemPrefix, GUILayout.Width(IndentWidth));
 				if (GUILayout.Button(f.Name, EditorStyles.miniButtonLeft)) f.Collapsed = !f.Collapsed;
+				if (GUILayout.Button("Animation", EditorStyles.miniButtonMid, GUILayout.Width(70))) CreateAnimation(f);
 				if (GUILayout.Button("Select", EditorStyles.miniButtonRight, GUILayout.Width(50))) SelectSprites(f.SpriteDescriptions);
 				EditorGUILayout.EndHorizontal();
 				if (!f.Collapsed) DrawFolder(f, depth+1);
@@ -204,6 +209,20 @@ namespace TexturePacker.Editor.Windows
 			var spriteRenderer = Selection.activeGameObject.GetComponent<SpriteRenderer>();
 			if (spriteRenderer == null) return;
 			spriteRenderer.sprite = sprite;
+		}
+
+		private void CreateAnimation(Folder folder)
+		{
+			var window = Dialog.ShowDialog<CreateAnimationWindow>("Create animation", DialogType.YesNo);
+			window.Name = folder.Name;
+			window.Sprites = folder.SpriteDescriptions.Select(x => x.Sprite).ToList();
+			window.Yes += WindowOnYes;
+		}
+
+		private void WindowOnYes(CreateAnimationWindow sender)
+		{
+			var animation = AnimationGenerator.GenerateAnimation(sender.Sprites, sender.FrameRate, sender.IsLooping, sender.Name);
+			ObjectCreatorHelper.CreateAsset(animation, animation.name + ".anim");
 		}
 	}
 }

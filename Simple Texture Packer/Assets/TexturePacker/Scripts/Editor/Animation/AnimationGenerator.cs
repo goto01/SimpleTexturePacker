@@ -7,21 +7,21 @@ namespace TexturePacker.Editor.Animation
 {
 	public static class AnimationGenerator
 	{
-		public static AnimationClip GenerateAndSaveAnimation(List<Sprite> sprites, int frameRate, string name, string path)
+		public static AnimationClip GenerateAndSaveAnimation(List<Sprite> sprites, int frameRate, bool isLooping, string name, string path)
 		{
-			var animationClip = GenerateAnimation(sprites, frameRate, name);
+			var animationClip = GenerateAnimation(sprites, frameRate, isLooping, name);
 			AssetDatabase.CreateAsset(animationClip, path);
 			AssetDatabase.SaveAssets();
 			return animationClip;
 		}
 
-		public static AnimationClip GenerateAnimation(List<Sprite> sprites, int frameRate, string name)
+		public static AnimationClip GenerateAnimation(List<Sprite> sprites, int frameRate, bool isLooping, string name)
 		{
 			var animationClip = new AnimationClip()
 			{
 				name = name,
 				frameRate = frameRate,
-			};
+			}; 
 			var editorCurveBinding = new EditorCurveBinding()
 			{
 				type = typeof(SpriteRenderer),
@@ -39,6 +39,12 @@ namespace TexturePacker.Editor.Animation
 				};
 			}
 			AnimationUtility.SetObjectReferenceCurve(animationClip, editorCurveBinding, keyFrames);
+			if (isLooping)
+			{
+				var @as = AnimationUtility.GetAnimationClipSettings(animationClip);
+				@as.loopTime = true;
+				AnimationUtility.SetAnimationClipSettings(animationClip, @as);
+			}
 			animationClip.EnsureQuaternionContinuity();
 			return animationClip;
 		}
