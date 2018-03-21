@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using Editor.TexturePacker.Domain;
 using Editor.TexturePacker.Repository;
+using Editor.Windows.DialogWindows;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
@@ -51,6 +52,7 @@ namespace Editor.TexturePacker.Windows
 		{
 			if (_textureDescriptions == null) InitTextureDescriptions();
 			if (_textureRepositories == null) InitTextureRepositories();
+			if (_outputlog == null) _outputlog = string.Empty;
 		}
 
 		private void InitTextureDescriptions()
@@ -87,7 +89,14 @@ namespace Editor.TexturePacker.Windows
 				EditorGUILayout.LabelField(textureDescription.Name);
 				
 				DrawTimeInspector(textureDescription);
-				if (GUILayout.Button("Transform to repository", EditorStyles.miniButtonLeft)) TransformTextureDescription(textureDescription);
+				if (GUILayout.Button("Transform to repository", EditorStyles.miniButtonLeft))
+				{
+					var window = Dialog.ShowDialog<YesNoDialogWindow>("Transform to texture repository", DialogType.YesNo);
+					window.Message = string.Format("Transform Texture Description {0} to Texture Repository {1}", textureDescription.Name,
+						_targetTextureRepository.name);
+					var td = textureDescription;
+					window.Yes += sender => TransformTextureDescription(td);
+				}
 				if (GUILayout.Button("Select", EditorStyles.miniButtonRight))
 				{
 					EditorGUIUtility.PingObject(textureDescription);
