@@ -108,7 +108,7 @@ namespace TexturePacker.Editor.Windows
 				GUILayout.Space(depth * IndentWidth);
 				GUILayout.Label(SimpleItemPrefix, GUILayout.Width(IndentWidth));
 				if (GUILayout.Button(f.Name, EditorStyles.miniButtonLeft)) f.Collapsed = !f.Collapsed;
-				if (GUILayout.Button("Select all sprites", EditorStyles.miniButtonRight, GUILayout.Width(100))) SelectSprites(f.SpriteDescriptions);
+				if (GUILayout.Button("Select", EditorStyles.miniButtonRight, GUILayout.Width(50))) SelectSprites(f.SpriteDescriptions);
 				EditorGUILayout.EndHorizontal();
 				if (!f.Collapsed) DrawFolder(f, depth+1);
 			}

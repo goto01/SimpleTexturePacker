@@ -1,9 +1,13 @@
-﻿using Editor.Windows.DialogWindows;
+﻿using System.Linq;
+using Editor.Windows.DialogWindows;
+using TexturePacker.Editor;
+using TexturePacker.Editor.Animation;
 using TexturePacker.Editor.DialogWindows;
 using TexturePacker.Editor.Domain;
 using TexturePacker.Editor.Repository;
 using TexturePacker.Editor.Windows;
 using UnityEditor;
+using UnityEngine;
 
 namespace Editor
 {

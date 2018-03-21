@@ -11,7 +11,6 @@ namespace TexturePacker.Editor.Transformation
 {
 	public static class Transformation
 	{
-		private const char Separator = '/';
 		private static TextureImporter _textureImporter;
 		private static TextureDescription _textureDescription;
 		private static string _textureAssetPath;
@@ -50,19 +49,22 @@ namespace TexturePacker.Editor.Transformation
 
 		private static Folder GenerateFolder(Frame frame)
 		{
-			var items = frame.filename.Split(Separator).ToList();
+			var items = frame.filename.Split(TextureRepository.Separator).ToList();
 			var depth = items.Count-1;
 			var root = _textureRepository.Root;
 			for (; items.Count > 1;)
 			{
-				var folder = GetFolder(root, items[0]);
+				var folder = TextureRepository.GetFolder(root, items[0]);
 				if (folder == null) break;
 				items.RemoveAt(0);
 				root = folder;
 			}
 			for (; items.Count > 1;)
 			{
-				root = CreateFolder(root, items[0], depth);
+				
+				_outputlog.Append(' ', (depth-1) * 3);
+				_outputlog.AppendLine(string.Format("* Folder created: {0}", items[0]));
+				root = TextureRepository.CreateFolder(root, items[0], depth);
 				items.RemoveAt(0);
 			}
 			return root;
@@ -78,20 +80,6 @@ namespace TexturePacker.Editor.Transformation
 				return;
 			}
 			CreateSpriteMetaData(frame, textureImporterWrapper);
-		}
-
-		private static  Folder GetFolder(Folder folder, string folderName)
-		{
-			return folder.Folders.SingleOrDefault(x => x.Name.Equals(folderName));
-		}
-
-		private static  Folder CreateFolder(Folder parent, string folderName, int depth)
-		{
-			_outputlog.Append(' ', (depth-1) * 3);
-			_outputlog.AppendLine(string.Format("* Folder created: {0}", folderName));
-			var folder = new Folder() {Name = folderName, Depth = depth};
-			parent.Folders.Add(folder);
-			return folder;
 		}
 
 		private static  SpriteDescription GetSpriteDescription(Folder folder, string spriteFileName)
