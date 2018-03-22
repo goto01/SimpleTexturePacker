@@ -11,7 +11,6 @@ namespace TexturePacker.Editor
 	{
 		private const string CreateMenu = "Assets/Create/Texture packer";
 		private const string TexturePacker = "Texture Packer";
-		private const string TexturePackerPublishing = "Texture Packer/Publishing";
 		
 		[MenuItem(CreateMenu + "/Texture Description", false, 1101)]
 		public static void CreateTextureDescription()
@@ -40,19 +39,13 @@ namespace TexturePacker.Editor
 			TransformationWindow.ShowSelf();
 		}
 
-		[MenuItem(TexturePacker + "/Texture Repository Browser Window", false, 0)]
+		[MenuItem(TexturePacker + "/Texture Repository Browser Window", false, 1)]
 		public static void ShowTextureRepositoryBrowserWindow()
 		{
 			TextureRepositoryBrowserWindow.ShowSelf();
 		}
 
-		[MenuItem(TexturePackerPublishing + "/Publish Settings", false, 0)]
-		public static void ShowPublishSettingsWindow()
-		{
-			PublishSettingsWindow.ShowSelf();
-		}
-
-		[MenuItem(TexturePackerPublishing + "/Publish", false, 0)]
+		[MenuItem(TexturePacker + "/Publish", false, 20)]
 		public static void Publish()
 		{
 			global::TexturePacker.Editor.Publishing.TexturePackerPublishing.Publish();
