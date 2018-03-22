@@ -1,5 +1,4 @@
-﻿using Editor.Windows.DialogWindows;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEngine;
 
 namespace TexturePacker.Editor.DialogWindows

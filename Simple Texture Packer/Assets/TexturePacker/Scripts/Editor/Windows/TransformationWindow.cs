@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Editor.Windows.DialogWindows;
+using TexturePacker.Editor.DialogWindows;
 using TexturePacker.Editor.Domain;
 using TexturePacker.Editor.Repository;
 using UnityEditor;

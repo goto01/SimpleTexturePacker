@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace Editor.Windows.DialogWindows
+namespace TexturePacker.Editor.DialogWindows
 {
 	public class CreateAnimationWindow : BaseDialogWindow<CreateAnimationWindow>
 	{

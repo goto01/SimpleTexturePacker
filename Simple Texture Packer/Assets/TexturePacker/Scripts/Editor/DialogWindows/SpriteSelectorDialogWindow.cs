@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Editor.Windows.DialogWindows;
 using TexturePacker.Editor.Repository;
 using UnityEditor;
 using UnityEngine;

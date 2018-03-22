@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Editor;
-using Editor.Windows.DialogWindows;
 using TexturePacker.Editor.Animation;
+using TexturePacker.Editor.DialogWindows;
 using TexturePacker.Editor.Repository;
 using UnityEditor;
 using UnityEngine;

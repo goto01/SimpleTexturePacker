@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace Editor.Windows.DialogWindows
+namespace TexturePacker.Editor.DialogWindows
 {
 	public sealed class YesNoDialogWindow : BaseDialogWindow<YesNoDialogWindow>
 	{
