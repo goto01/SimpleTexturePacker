@@ -110,7 +110,7 @@ namespace TexturePacker.Editor.Windows
 				EditorGUILayout.BeginHorizontal();
 				GUILayout.Space(depth * IndentWidth);
 				GUILayout.Label(SimpleItemPrefix, GUILayout.Width(IndentWidth));
-				if (GUILayout.Button(f.Name, EditorStyles.miniButtonLeft)) f.Collapsed = !f.Collapsed;
+				if (GUILayout.Button(f.Name, EditorStyles.miniButtonLeft, GUILayout.MinWidth(50))) f.Collapsed = !f.Collapsed;
 				if (GUILayout.Button("Animation", EditorStyles.miniButtonMid, GUILayout.Width(70))) CreateAnimation(f);
 				if (GUILayout.Button("Select", EditorStyles.miniButtonRight, GUILayout.Width(50))) SelectSprites(f.SpriteDescriptions);
 				EditorGUILayout.EndHorizontal();
@@ -124,7 +124,7 @@ namespace TexturePacker.Editor.Windows
 				GUILayout.Label(index == folder.SpriteDescriptions.Count-1 ? LastItemPrefix : SimpleItemPrefix, GUILayout.Width(IndentWidth));
 				if (!CheckForSelection(spriteDescription)) GUI.color = _defaultLabelColor;
 				EditorGUILayout.BeginHorizontal();
-				if (GUILayout.Button(spriteDescription.FileName, GUI.skin.label))
+				if (GUILayout.Button(spriteDescription.FileName, GUI.skin.label, GUILayout.MinWidth(50)))
 				{
 					if (_ctrlPressed) SelectSprite(spriteDescription);
 					else SelectSpriteOnly(spriteDescription);
