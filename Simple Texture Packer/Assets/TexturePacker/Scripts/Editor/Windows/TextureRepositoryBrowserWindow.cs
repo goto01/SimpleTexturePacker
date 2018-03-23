@@ -219,8 +219,7 @@ namespace TexturePacker.Editor.Windows
 
 		private void WindowOnYes(CreateAnimationWindow sender)
 		{
-			var animation = AnimationGenerator.GenerateAnimation(sender.Sprites, sender.FrameRate, sender.IsLooping, sender.Name);
-			ObjectCreatorHelper.CreateAsset(animation, animation.name + ".anim");
+			var animation = AnimationGenerator.GenerateAndSaveAnimationToCurrentDirectory(sender.Sprites, sender.FrameRate, sender.IsLooping, sender.Name);
 		}
 	}
 }

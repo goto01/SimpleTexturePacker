@@ -15,203 +15,61 @@ MonoBehaviour:
     Name: Root
     Depth: 0
     Folders:
-    - Name: FX
-      Depth: 1
+    - Name: Characters
+      Depth: 4
       Folders:
-      - Name: cursor
-        Depth: 2
-        Folders: []
-        SpriteDescriptions:
-        - Sprite: {fileID: 21300036, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-          FileName: FX/cursor/crosshair reload.png
-          Height: 0
-        - Sprite: {fileID: 21300038, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-          FileName: FX/cursor/crosshair reload1.png
-          Height: 0
-        - Sprite: {fileID: 21300040, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-          FileName: FX/cursor/crosshair reload2.png
-          Height: 0
-        - Sprite: {fileID: 21300042, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-          FileName: FX/cursor/crosshair reload3.png
-          Height: 0
-        - Sprite: {fileID: 21300044, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-          FileName: FX/cursor/crosshair reload4.png
-          Height: 0
-        - Sprite: {fileID: 21300046, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-          FileName: FX/cursor/crosshair reload5.png
-          Height: 0
-        - Sprite: {fileID: 21300048, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-          FileName: FX/cursor/crosshair reload6.png
-          Height: 0
-        - Sprite: {fileID: 21300050, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-          FileName: FX/cursor/crosshair.png
-          Height: 0
-        - Sprite: {fileID: 21300052, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-          FileName: FX/cursor/no ammo.png
-          Height: 0
-        Collapsed: 1
-      - Name: Test sprites
-        Depth: 2
-        Folders: []
-        SpriteDescriptions:
-        - Sprite: {fileID: 21300318, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-          FileName: FX/Test sprites/Tile_0.png
-          Height: 0
-        - Sprite: {fileID: 21300320, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-          FileName: FX/Test sprites/Tile_1.png
-          Height: 0
-        - Sprite: {fileID: 21300322, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-          FileName: FX/Test sprites/Tile_2.png
-          Height: 0
-        - Sprite: {fileID: 21300324, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-          FileName: FX/Test sprites/Tile_3.png
-          Height: 0
-        - Sprite: {fileID: 21300326, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-          FileName: FX/Test sprites/Tile_4.png
-          Height: 0
-        - Sprite: {fileID: 21300328, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-          FileName: FX/Test sprites/Tile_5.png
-          Height: 0
-        - Sprite: {fileID: 21300330, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-          FileName: FX/Test sprites/Tile_6.png
-          Height: 0
-        - Sprite: {fileID: 21300332, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-          FileName: FX/Test sprites/Tile_7.png
-          Height: 0
-        - Sprite: {fileID: 21300334, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-          FileName: FX/Test sprites/Tile_8.png
-          Height: 0
-        - Sprite: {fileID: 21300336, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-          FileName: FX/Test sprites/Tile_9.png
-          Height: 0
-        Collapsed: 1
-      SpriteDescriptions:
-      - Sprite: {fileID: 21300032, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-        FileName: FX/blackhole 24x24.png
-        Height: 0
-      - Sprite: {fileID: 21300034, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-        FileName: FX/bullet.png
-        Height: 0
-      - Sprite: {fileID: 21300054, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-        FileName: FX/explosion middle.png
-        Height: 0
-      - Sprite: {fileID: 21300056, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-        FileName: FX/explosion.png
-        Height: 0
-      - Sprite: {fileID: 21300058, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-        FileName: FX/laser bullet.png
-        Height: 0
-      - Sprite: {fileID: 21300060, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-        FileName: FX/muzzle flash.png
-        Height: 0
-      - Sprite: {fileID: 21300062, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-        FileName: FX/shotgun bullet.png
-        Height: 0
-      - Sprite: {fileID: 21300064, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-        FileName: FX/sparkle.png
-        Height: 0
-      - Sprite: {fileID: 21300066, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-        FileName: FX/swipe.png
-        Height: 0
+      - Name: Player
+        Depth: 4
+        Folders:
+        - Name: Beaver
+          Depth: 4
+          Folders:
+          - Name: Idle
+            Depth: 4
+            Folders: []
+            SpriteDescriptions:
+            - Sprite: {fileID: 21300000, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+              FileName: Characters/Player/Beaver/Idle/Idle_0.png
+              Height: 426
+            - Sprite: {fileID: 21300002, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+              FileName: Characters/Player/Beaver/Idle/Idle_1.png
+              Height: 426
+            Collapsed: 0
+          - Name: Running
+            Depth: 4
+            Folders: []
+            SpriteDescriptions:
+            - Sprite: {fileID: 21300004, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+              FileName: Characters/Player/Beaver/Running/Running_0.png
+              Height: 426
+            - Sprite: {fileID: 21300006, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+              FileName: Characters/Player/Beaver/Running/Running_1.png
+              Height: 472
+            - Sprite: {fileID: 21300008, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+              FileName: Characters/Player/Beaver/Running/Running_2.png
+              Height: 0
+            - Sprite: {fileID: 21300010, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+              FileName: Characters/Player/Beaver/Running/Running_3.png
+              Height: 0
+            Collapsed: 0
+          SpriteDescriptions: []
+          Collapsed: 0
+        SpriteDescriptions: []
+        Collapsed: 0
+      SpriteDescriptions: []
       Collapsed: 0
-    SpriteDescriptions:
-    - Sprite: {fileID: 21300012, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: alien1.png
-      Height: 0
-    - Sprite: {fileID: 21300018, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: ammo.png
-      Height: 0
-    - Sprite: {fileID: 21300020, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: beaver.png
-      Height: 0
-    - Sprite: {fileID: 21300022, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: bigrobot.png
-      Height: 0
-    - Sprite: {fileID: 21300024, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: controls.png
-      Height: 0
-    - Sprite: {fileID: 21300026, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: controls2.png
-      Height: 0
-    - Sprite: {fileID: 21300028, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: dam health gray tex.png
-      Height: 0
-    - Sprite: {fileID: 21300030, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: dam health.png
-      Height: 0
-    - Sprite: {fileID: 21300068, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: gun1.png
-      Height: 0
-    - Sprite: {fileID: 21300070, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: gun2.png
-      Height: 0
-    - Sprite: {fileID: 21300072, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: health.png
-      Height: 0
-    - Sprite: {fileID: 21300074, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: hero10000.png
-      Height: 0
-    - Sprite: {fileID: 21300076, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: machinegun.png
-      Height: 0
-    - Sprite: {fileID: 21300078, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: numbers1.png
-      Height: 0
-    - Sprite: {fileID: 21300080, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: numbers2.png
-      Height: 0
-    - Sprite: {fileID: 21300082, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: pistol reload.png
-      Height: 0
-    - Sprite: {fileID: 21300084, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: redneckret 40x30.png
-      Height: 0
-    - Sprite: {fileID: 21300086, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: reload anim.png
-      Height: 0
-    - Sprite: {fileID: 21300088, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: rifle.png
-      Height: 0
-    - Sprite: {fileID: 21300090, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: robotb.png
-      Height: 0
-    - Sprite: {fileID: 21300092, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: robotb2.png
-      Height: 0
-    - Sprite: {fileID: 21300094, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: shotgun_reload 20x20.png
-      Height: 0
-    - Sprite: {fileID: 21300096, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: ufo.png
-      Height: 0
-    - Sprite: {fileID: 21300098, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: ui bullets.png
-      Height: 0
-    - Sprite: {fileID: 21300100, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: ui gun s.png
-      Height: 0
-    - Sprite: {fileID: 21300102, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: ui gun.png
-      Height: 0
-    - Sprite: {fileID: 21300104, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: ui machinegun s.png
-      Height: 0
-    - Sprite: {fileID: 21300106, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: ui machinegun.png
-      Height: 0
-    - Sprite: {fileID: 21300108, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: ui rifle s.png
-      Height: 0
-    - Sprite: {fileID: 21300110, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: ui rifle.png
-      Height: 0
-    - Sprite: {fileID: 21300112, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: ui shotgun s.png
-      Height: 0
-    - Sprite: {fileID: 21300114, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: ui shotgun.png
-      Height: 0
-    - Sprite: {fileID: 21300116, guid: 15e22d473b5c17b47983f59ac38ba480, type: 3}
-      FileName: zombie1.png
-      Height: 0
+    - Name: Planets
+      Depth: 2
+      Folders:
+      - Name: Simple planet
+        Depth: 2
+        Folders: []
+        SpriteDescriptions:
+        - Sprite: {fileID: 21300012, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: Planets/Simple planet/Simple planet.png
+          Height: 0
+        Collapsed: 0
+      SpriteDescriptions: []
+      Collapsed: 0
+    SpriteDescriptions: []
     Collapsed: 0

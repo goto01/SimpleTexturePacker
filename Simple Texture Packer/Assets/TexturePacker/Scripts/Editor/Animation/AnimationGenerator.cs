@@ -7,20 +7,29 @@ namespace TexturePacker.Editor.Animation
 {
 	public static class AnimationGenerator
 	{
-		public static AnimationClip GenerateAndSaveAnimation(List<Sprite> sprites, int frameRate, bool isLooping, string name, string path)
+		public static AnimationClip GenerateAndSaveAnimation(List<Sprite> sprites, int frameRate, bool isLooping, string path)
 		{
-			var animationClip = GenerateAnimation(sprites, frameRate, isLooping, name);
+			var animationClip = GenerateAnimation(sprites, frameRate, isLooping, Path.GetFileNameWithoutExtension(path));
+			if (AssetDatabase.LoadAssetAtPath<AnimationClip>(path) != null) AssetDatabase.DeleteAsset(path);
 			AssetDatabase.CreateAsset(animationClip, path);
 			AssetDatabase.SaveAssets();
+			EditorUtility.SetDirty(animationClip);
 			return animationClip;
 		}
 
-		public static AnimationClip GenerateAnimation(List<Sprite> sprites, int frameRate, bool isLooping, string name)
+		public static AnimationClip GenerateAndSaveAnimationToCurrentDirectory(List<Sprite> sprites, int frameRate, bool isLooping, string name)
+		{
+			var animationClip = GenerateAnimation(sprites, frameRate, isLooping, name);
+			ObjectCreatorHelper.CreateAsset(animationClip, string.Format("{0}.anim", name));
+			return animationClip;
+		}
+
+		private static AnimationClip GenerateAnimation(List<Sprite> sprites, int frameRate, bool isLooping, string name)
 		{
 			var animationClip = new AnimationClip()
 			{
 				name = name,
-				frameRate = frameRate,
+				frameRate = frameRate
 			}; 
 			var editorCurveBinding = new EditorCurveBinding()
 			{
@@ -41,9 +50,13 @@ namespace TexturePacker.Editor.Animation
 			AnimationUtility.SetObjectReferenceCurve(animationClip, editorCurveBinding, keyFrames);
 			if (isLooping)
 			{
-				var @as = AnimationUtility.GetAnimationClipSettings(animationClip);
-				@as.loopTime = true;
-				AnimationUtility.SetAnimationClipSettings(animationClip, @as);
+				animationClip.wrapMode = WrapMode.Loop;
+				var animationClipSettings = AnimationUtility.GetAnimationClipSettings(animationClip);
+				animationClipSettings.loopTime = true; 
+				AnimationUtility.SetAnimationClipSettings(animationClip, animationClipSettings);
+				AssetDatabase.SaveAssets();
+				EditorUtility.SetDirty(animationClip);
+				
 			}
 			animationClip.EnsureQuaternionContinuity();
 			return animationClip;

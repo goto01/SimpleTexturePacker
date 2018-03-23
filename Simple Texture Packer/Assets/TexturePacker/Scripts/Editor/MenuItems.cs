@@ -47,7 +47,7 @@ namespace TexturePacker.Editor
 		[MenuItem(TexturePacker + "/Publish", false, 20)]
 		public static void Publish()
 		{
-			global::TexturePacker.Editor.Publishing.TexturePackerPublishing.Publish();
+			Publishing.TexturePackerPublishing.Publish();
 		}
 	}
 }
