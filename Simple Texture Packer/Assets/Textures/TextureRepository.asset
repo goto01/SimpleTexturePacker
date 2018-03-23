@@ -30,10 +30,12 @@ MonoBehaviour:
             SpriteDescriptions:
             - Sprite: {fileID: 21300000, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Idle/Idle_0.png
-              Height: 426
+              Pivot: {x: 0.5, y: 0.5}
+              Height: 464
             - Sprite: {fileID: 21300002, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Idle/Idle_1.png
-              Height: 426
+              Pivot: {x: 0.5, y: 0.5}
+              Height: 464
             Collapsed: 0
           - Name: Running
             Depth: 4
@@ -41,16 +43,20 @@ MonoBehaviour:
             SpriteDescriptions:
             - Sprite: {fileID: 21300004, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Running/Running_0.png
-              Height: 426
+              Pivot: {x: 0.5, y: 1}
+              Height: 449
             - Sprite: {fileID: 21300006, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Running/Running_1.png
-              Height: 472
+              Pivot: {x: 0.5, y: 1}
+              Height: 449
             - Sprite: {fileID: 21300008, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Running/Running_2.png
-              Height: 0
+              Pivot: {x: 0.5, y: 1}
+              Height: 449
             - Sprite: {fileID: 21300010, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Running/Running_3.png
-              Height: 0
+              Pivot: {x: 0.5, y: 1}
+              Height: 449
             Collapsed: 0
           SpriteDescriptions: []
           Collapsed: 0
@@ -67,6 +73,7 @@ MonoBehaviour:
         SpriteDescriptions:
         - Sprite: {fileID: 21300012, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
           FileName: Planets/Simple planet/Simple planet.png
+          Pivot: {x: 0.5, y: 0.5}
           Height: 0
         Collapsed: 0
       SpriteDescriptions: []

@@ -49,14 +49,14 @@ namespace TexturePacker.Editor.Windows
 			EditorGUILayout.BeginHorizontal();
 			EditorGUILayout.BeginVertical(GUILayout.Width(HalfWindowWidth));
 			DrawTextureRepositoryTree();
-			EditorGUILayout.EndVertical();
-			
+			EditorGUILayout.EndVertical();			
 			EditorGUILayout.BeginVertical(GUILayout.Width(HalfWindowWidth));
 			DrawSelectionInspector();
 			EditorGUILayout.EndVertical();
-			
 			EditorGUILayout.EndHorizontal();
+			
 			Repaint();
+			EditorUtility.SetDirty(_textureRepository);
 		}
 
 		private void Init()
@@ -143,6 +143,7 @@ namespace TexturePacker.Editor.Windows
 			foreach (var selectedSprite in _selectedSprites)
 			{
 				EditorGUILayout.LabelField(selectedSprite.FileName);
+				selectedSprite.Pivot = EditorGUILayout.Vector2Field("Pivot", selectedSprite.Pivot);
 				var width = GUILayoutUtility.GetLastRect().width;
 				var height = width * selectedSprite.Sprite.rect.height / selectedSprite.Sprite.rect.width;
 				if (height > 1) selectedSprite.Height = height;

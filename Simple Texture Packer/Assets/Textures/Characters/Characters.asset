@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: Characters
   m_EditorClassIdentifier: 
   Name: Characters
-  TransformationDate: 2018-03-23 13:58
+  TransformationDate: 2018-03-23 15:27
   JsonDataFile: {fileID: 4900000, guid: 21b88e6251983ca40afb4f251c503520, type: 3}
   Texture: {fileID: 2800000, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
