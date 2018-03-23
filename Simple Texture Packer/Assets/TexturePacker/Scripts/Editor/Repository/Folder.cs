@@ -10,6 +10,8 @@ namespace TexturePacker.Editor.Repository
 		public int Depth;
 		public List<Folder> Folders = new List<Folder>();
 		public List<SpriteDescription> SpriteDescriptions = new List<SpriteDescription>();
+		public int FrameRate;
+		public bool Loop;
 
 		public bool Collapsed;
 	}

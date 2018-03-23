@@ -26,6 +26,7 @@ namespace TexturePacker.Editor.Windows
 		private List<SpriteDescription> _selectedSprites;
 		private Vector2 _selectionScroll;
 		private bool _ctrlPressed;
+		private Folder _selectedFolder;
 		
 		private float HalfWindowWidth {get { return (position.width - Margin) / 2; }}
 		
@@ -110,10 +111,13 @@ namespace TexturePacker.Editor.Windows
 				EditorGUILayout.BeginHorizontal();
 				GUILayout.Space(depth * IndentWidth);
 				GUILayout.Label(SimpleItemPrefix, GUILayout.Width(IndentWidth));
+				if (f != _selectedFolder) GUI.color = _defaultLabelColor;
 				if (GUILayout.Button(f.Name, EditorStyles.miniButtonLeft, GUILayout.MinWidth(50))) f.Collapsed = !f.Collapsed;
+				if (GUILayout.Button("Select", EditorStyles.miniButtonMid, GUILayout.Width(50))) SelectFolder(f);
 				if (GUILayout.Button("Animation", EditorStyles.miniButtonMid, GUILayout.Width(70))) CreateAnimation(f);
-				if (GUILayout.Button("Select", EditorStyles.miniButtonRight, GUILayout.Width(50))) SelectSprites(f.SpriteDescriptions);
+				if (GUILayout.Button("Sprites", EditorStyles.miniButtonRight, GUILayout.Width(50))) SelectSprites(f.SpriteDescriptions);
 				EditorGUILayout.EndHorizontal();
+				GUI.color = Color.white;
 				if (!f.Collapsed) DrawFolder(f, depth+1);
 			}
 			for (var index = 0; index < folder.SpriteDescriptions.Count; index++)
@@ -139,6 +143,11 @@ namespace TexturePacker.Editor.Windows
 
 		private void DrawSelectionInspector()
 		{
+			if (_selectedFolder != null)
+			{
+				DrawFolderSelectionInspector();
+				return;
+			}
 			_selectionScroll = EditorGUILayout.BeginScrollView(_selectionScroll, GUI.skin.box);
 			foreach (var selectedSprite in _selectedSprites)
 			{
@@ -160,6 +169,14 @@ namespace TexturePacker.Editor.Windows
 			EditorGUILayout.EndScrollView();
 		}
 
+		private void DrawFolderSelectionInspector()
+		{
+			EditorGUILayout.BeginVertical(GUI.skin.box);
+			_selectedFolder.FrameRate = EditorGUILayout.IntField("Frame Rate", _selectedFolder.FrameRate);
+			_selectedFolder.Loop = EditorGUILayout.Toggle("Loop", _selectedFolder.Loop);
+			EditorGUILayout.EndVertical();
+		}
+
 		private void SelectSprite(SpriteDescription spriteDescription)
 		{
 			if (_selectedSprites.Contains(spriteDescription))
@@ -168,12 +185,14 @@ namespace TexturePacker.Editor.Windows
 				return;
 			}
 			_selectedSprites.Add(spriteDescription);
+			_selectedFolder = null;
 		}
 
 		private void SelectSpriteOnly(SpriteDescription spriteDescription)
 		{
 			_selectedSprites.Clear();
 			_selectedSprites.Add(spriteDescription);
+			_selectedFolder = null;
 		}
 
 		private void SelectSprites(List<SpriteDescription> spriteDescriptions)
@@ -184,6 +203,12 @@ namespace TexturePacker.Editor.Windows
 		private bool CheckForSelection(SpriteDescription spriteDescription)
 		{
 			return _selectedSprites.Contains(spriteDescription);
+		}
+
+		private void SelectFolder(Folder folder)
+		{
+			_selectedSprites.Clear();
+			_selectedFolder = folder;
 		}
 		
 		private void HandleKeys()
@@ -213,6 +238,8 @@ namespace TexturePacker.Editor.Windows
 		{
 			var window = Dialog.ShowDialog<CreateAnimationWindow>("Create animation", DialogType.YesNo);
 			window.Name = folder.Name;
+			window.FrameRate = folder.FrameRate;
+			window.IsLooping = folder.Loop;
 			window.Sprites = folder.SpriteDescriptions.Select(x => x.Sprite).ToList();
 			window.Yes += WindowOnYes;
 		}

@@ -31,11 +31,13 @@ MonoBehaviour:
             - Sprite: {fileID: 21300000, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Idle/Idle_0.png
               Pivot: {x: 0.5, y: 0.5}
-              Height: 464
+              Height: 407
             - Sprite: {fileID: 21300002, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Idle/Idle_1.png
               Pivot: {x: 0.5, y: 0.5}
-              Height: 464
+              Height: 448
+            FrameRate: 5
+            Loop: 1
             Collapsed: 0
           - Name: Running
             Depth: 4
@@ -44,25 +46,33 @@ MonoBehaviour:
             - Sprite: {fileID: 21300004, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Running/Running_0.png
               Pivot: {x: 0.5, y: 1}
-              Height: 449
+              Height: 407
             - Sprite: {fileID: 21300006, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Running/Running_1.png
               Pivot: {x: 0.5, y: 1}
-              Height: 449
+              Height: 407
             - Sprite: {fileID: 21300008, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Running/Running_2.png
               Pivot: {x: 0.5, y: 1}
-              Height: 449
+              Height: 433
             - Sprite: {fileID: 21300010, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Running/Running_3.png
               Pivot: {x: 0.5, y: 1}
-              Height: 449
+              Height: 433
+            FrameRate: 10
+            Loop: 1
             Collapsed: 0
           SpriteDescriptions: []
+          FrameRate: 0
+          Loop: 0
           Collapsed: 0
         SpriteDescriptions: []
+        FrameRate: 0
+        Loop: 0
         Collapsed: 0
       SpriteDescriptions: []
+      FrameRate: 0
+      Loop: 0
       Collapsed: 0
     - Name: Planets
       Depth: 2
@@ -75,8 +85,14 @@ MonoBehaviour:
           FileName: Planets/Simple planet/Simple planet.png
           Pivot: {x: 0.5, y: 0.5}
           Height: 0
+        FrameRate: 0
+        Loop: 0
         Collapsed: 0
       SpriteDescriptions: []
+      FrameRate: 0
+      Loop: 0
       Collapsed: 0
     SpriteDescriptions: []
+    FrameRate: 0
+    Loop: 0
     Collapsed: 0
