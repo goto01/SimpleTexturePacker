@@ -1,5 +1,4 @@
-﻿using Editor;
-using TexturePacker.Editor.DialogWindows;
+﻿using TexturePacker.Editor.DialogWindows;
 using TexturePacker.Editor.Domain;
 using TexturePacker.Editor.Repository;
 using TexturePacker.Editor.Windows;

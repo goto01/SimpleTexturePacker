@@ -1,8 +1,7 @@
-﻿using System;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEngine;
 
-namespace Editor
+namespace TexturePacker.Editor
 {
     public class ObjectCreatorHelper
     {
