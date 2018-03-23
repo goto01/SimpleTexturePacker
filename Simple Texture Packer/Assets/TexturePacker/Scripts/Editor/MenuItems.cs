@@ -29,7 +29,7 @@ namespace TexturePacker.Editor
 		[MenuItem(CreateMenu + "/Texture Repository", false, 1102)]
 		public static void CreateTextureRepository()
 		{
-			var textureRepository = ObjectCreatorHelper.CreateAsset<TextureRepository>();
+			ObjectCreatorHelper.CreateAsset<TextureRepository>();
 		}
 
 		[MenuItem(TexturePacker + "/Transfomartion Window", false, 0)]

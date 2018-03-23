@@ -16,7 +16,7 @@ namespace TexturePacker.Editor.Publishing
 		{
 			var args = string.Format("--extrude 0 --algorithm Basic --trim-mode None --png-opt-level 0 --disable-auto-alias --sheet  \"{0}{1}\" --data \"{0}{2}\" --format json-array \"{3}\"",
 				Application.dataPath, destinationTexturePath, destinationDataPath, sourceFolder);
-			var process = Process.Start(texturePackerPath, args);
+			Process.Start(texturePackerPath, args);
 		}
 
 		public static void Publish()
