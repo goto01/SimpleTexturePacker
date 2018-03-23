@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using TexturePacker.Editor.DialogWindows;
 using TexturePacker.Editor.Domain;
+using TexturePacker.Editor.Publishing;
 using TexturePacker.Editor.Repository;
 using UnityEditor;
 using UnityEngine;
@@ -72,11 +73,14 @@ namespace TexturePacker.Editor.Windows
 		private void DrawHeaderInspector()
 		{
 			EditorGUILayout.LabelField("Texture transformation", EditorStyles.boldLabel);
-			if (GUILayout.Button("Refresh"))
+			EditorGUILayout.BeginHorizontal();
+			if (GUILayout.Button("Refresh", EditorStyles.miniButtonLeft))
 			{
 				InitTextureDescriptions();
 				InitTextureRepositories();
 			}
+			if (GUILayout.Button("Publish", EditorStyles.miniButtonRight, GUILayout.Width(100))) TexturePackerPublishing.Publish();
+			EditorGUILayout.EndHorizontal();
 		}
 		
 		private void DrawTextureDescriptionsInspector()
