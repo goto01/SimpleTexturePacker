@@ -15,7 +15,7 @@ namespace TexturePacker.Editor.Windows
 	{
 		private const int DateLabelWidth = 150;
 		private const int DateSeparatorWidth = 20;
-		private const string DateTimeFormat = "yyyy-MM-dd HH:mm";
+		private const string DateTimeFormat = "yyyy-MM-dd HH:mm:ss";
 		private readonly Color _alertColor = new Color(1, .4f, .4f);
 		private readonly Color _alrightColor = new Color(.4f, 1, .4f);
 		
