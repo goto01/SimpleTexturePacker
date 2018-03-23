@@ -56,6 +56,7 @@ namespace TexturePacker.Editor.Windows
 			EditorGUILayout.EndVertical();
 			
 			EditorGUILayout.EndHorizontal();
+			Repaint();
 		}
 
 		private void Init()
@@ -166,14 +167,12 @@ namespace TexturePacker.Editor.Windows
 				return;
 			}
 			_selectedSprites.Add(spriteDescription);
-			Repaint();
 		}
 
 		private void SelectSpriteOnly(SpriteDescription spriteDescription)
 		{
 			_selectedSprites.Clear();
 			_selectedSprites.Add(spriteDescription);
-			Repaint();
 		}
 
 		private void SelectSprites(List<SpriteDescription> spriteDescriptions)
