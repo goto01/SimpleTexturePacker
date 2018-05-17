@@ -39,7 +39,7 @@ namespace TexturePacker.Editor.Transformation
 		{
 			var smd = new SpriteMetaData()
 			{
-				alignment = 9,
+				alignment = 9,	//Custom pivot
 				pivot = pivot,
 				rect = rect,
 				name = name
