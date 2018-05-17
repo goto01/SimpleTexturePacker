@@ -11,6 +11,30 @@ TextureImporter:
     21300008: Characters/Player/Beaver/Running/Running_2.png
     21300010: Characters/Player/Beaver/Running/Running_3.png
     21300012: Planets/Simple planet/Simple planet.png
+    21300014: Bullets/Revolver/RevolverBullet.png
+    21300016: Bullets/SMG/SMG Bullet.png
+    21300018: Characters/Player/Beaver/InSpace/InSpace.png
+    21300020: Characters/Player/Beaver/Jumping/Jumping.png
+    21300022: UI/Aims/Aim0.png
+    21300024: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_0.png
+    21300026: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_1.png
+    21300028: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_2.png
+    21300030: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_3.png
+    21300032: VFX/Small eplosion/Small explosion_Animation 1_0.png
+    21300034: VFX/Small eplosion/Small explosion_Animation 1_1.png
+    21300036: VFX/Small eplosion/Small explosion_Animation 1_2.png
+    21300038: VFX/Small eplosion/Small explosion_Animation 1_3.png
+    21300040: VFX/Small eplosion/Small explosion_Animation 1_4.png
+    21300042: Weapons/MachineGun/MachineGun.png
+    21300044: Weapons/MachineGun/MachineGunBullet.png
+    21300046: Weapons/MachineGun/MachineGunMuzzleFlash.png
+    21300048: Weapons/Minigun/Minigun.png
+    21300050: Weapons/Revolver/MazzleFlash.png
+    21300052: Weapons/Revolver/Revolver.png
+    21300054: Weapons/SMG/SMG.png
+    21300056: Weapons/TrippleMachineGun/TrippleMachineGunBullet.png
+    21300058: Weapons/TrippleMachineGun/TrippleMachineGunMuzzleFlash.png
+    21300060: Weapons/TrippleMachineGun/TrippleMachineGup.png
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -87,11 +111,39 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: Bullets/Revolver/RevolverBullet.png
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 238
+        width: 8
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Bullets/SMG/SMG Bullet.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 229
+        width: 12
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
       name: Characters/Player/Beaver/Idle/Idle_0.png
       rect:
         serializedVersion: 2
-        x: 0
-        y: 144
+        x: 24
+        y: 180
         width: 24
         height: 24
       alignment: 9
@@ -104,8 +156,36 @@ TextureImporter:
       name: Characters/Player/Beaver/Idle/Idle_1.png
       rect:
         serializedVersion: 2
-        x: 24
-        y: 144
+        x: 0
+        y: 180
+        width: 24
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Characters/Player/Beaver/InSpace/InSpace.png
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 204
+        width: 24
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Characters/Player/Beaver/Jumping/Jumping.png
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 204
         width: 24
         height: 24
       alignment: 9
@@ -118,8 +198,8 @@ TextureImporter:
       name: Characters/Player/Beaver/Running/Running_0.png
       rect:
         serializedVersion: 2
-        x: 48
-        y: 144
+        x: 0
+        y: 204
         width: 24
         height: 24
       alignment: 9
@@ -132,8 +212,8 @@ TextureImporter:
       name: Characters/Player/Beaver/Running/Running_1.png
       rect:
         serializedVersion: 2
-        x: 72
-        y: 144
+        x: 32
+        y: 204
         width: 24
         height: 24
       alignment: 9
@@ -146,8 +226,8 @@ TextureImporter:
       name: Characters/Player/Beaver/Running/Running_2.png
       rect:
         serializedVersion: 2
-        x: 96
-        y: 144
+        x: 48
+        y: 180
         width: 24
         height: 24
       alignment: 9
@@ -160,8 +240,8 @@ TextureImporter:
       name: Characters/Player/Beaver/Running/Running_3.png
       rect:
         serializedVersion: 2
-        x: 0
-        y: 120
+        x: 72
+        y: 180
         width: 24
         height: 24
       alignment: 9
@@ -178,6 +258,286 @@ TextureImporter:
         y: 0
         width: 120
         height: 120
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI/Aims/Aim0.png
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 235
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_0.png
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 148
+        width: 28
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_1.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 148
+        width: 28
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_2.png
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 176
+        width: 28
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_3.png
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 148
+        width: 28
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: VFX/Small eplosion/Small explosion_Animation 1_0.png
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 120
+        width: 28
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: VFX/Small eplosion/Small explosion_Animation 1_1.png
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 120
+        width: 28
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: VFX/Small eplosion/Small explosion_Animation 1_2.png
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 120
+        width: 28
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: VFX/Small eplosion/Small explosion_Animation 1_3.png
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 148
+        width: 28
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: VFX/Small eplosion/Small explosion_Animation 1_4.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 28
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Weapons/MachineGun/MachineGun.png
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 232
+        width: 6
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Weapons/MachineGun/MachineGunBullet.png
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 229
+        width: 12
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Weapons/MachineGun/MachineGunMuzzleFlash.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 231
+        width: 20
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Weapons/Minigun/Minigun.png
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 204
+        width: 8
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Weapons/Revolver/MazzleFlash.png
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 235
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Weapons/Revolver/Revolver.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 242
+        width: 7
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Weapons/SMG/SMG.png
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 235
+        width: 11
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Weapons/TrippleMachineGun/TrippleMachineGunBullet.png
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 229
+        width: 6
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Weapons/TrippleMachineGun/TrippleMachineGunMuzzleFlash.png
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 204
+        width: 24
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Weapons/TrippleMachineGun/TrippleMachineGup.png
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 228
+        width: 12
+        height: 23
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

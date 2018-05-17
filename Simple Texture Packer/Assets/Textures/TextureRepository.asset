@@ -31,11 +31,9 @@ MonoBehaviour:
             - Sprite: {fileID: 21300000, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Idle/Idle_0.png
               Pivot: {x: 0.5, y: 0.5}
-              Height: 407
             - Sprite: {fileID: 21300002, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Idle/Idle_1.png
               Pivot: {x: 0.5, y: 0.5}
-              Height: 448
             FrameRate: 5
             Loop: 1
             Collapsed: 0
@@ -46,21 +44,37 @@ MonoBehaviour:
             - Sprite: {fileID: 21300004, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Running/Running_0.png
               Pivot: {x: 0.5, y: 1}
-              Height: 407
             - Sprite: {fileID: 21300006, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Running/Running_1.png
               Pivot: {x: 0.5, y: 1}
-              Height: 407
             - Sprite: {fileID: 21300008, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Running/Running_2.png
               Pivot: {x: 0.5, y: 1}
-              Height: 433
             - Sprite: {fileID: 21300010, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Running/Running_3.png
               Pivot: {x: 0.5, y: 1}
-              Height: 433
             FrameRate: 10
             Loop: 1
+            Collapsed: 0
+          - Name: InSpace
+            Depth: 4
+            Folders: []
+            SpriteDescriptions:
+            - Sprite: {fileID: 21300018, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+              FileName: Characters/Player/Beaver/InSpace/InSpace.png
+              Pivot: {x: 0.5, y: 0.5}
+            FrameRate: 0
+            Loop: 0
+            Collapsed: 0
+          - Name: Jumping
+            Depth: 4
+            Folders: []
+            SpriteDescriptions:
+            - Sprite: {fileID: 21300020, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+              FileName: Characters/Player/Beaver/Jumping/Jumping.png
+              Pivot: {x: 0.5, y: 0.5}
+            FrameRate: 0
+            Loop: 0
             Collapsed: 0
           SpriteDescriptions: []
           FrameRate: 0
@@ -84,7 +98,174 @@ MonoBehaviour:
         - Sprite: {fileID: 21300012, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
           FileName: Planets/Simple planet/Simple planet.png
           Pivot: {x: 0.5, y: 0.5}
-          Height: 0
+        FrameRate: 0
+        Loop: 0
+        Collapsed: 0
+      SpriteDescriptions: []
+      FrameRate: 0
+      Loop: 0
+      Collapsed: 0
+    - Name: Bullets
+      Depth: 2
+      Folders:
+      - Name: Revolver
+        Depth: 2
+        Folders: []
+        SpriteDescriptions:
+        - Sprite: {fileID: 21300014, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: Bullets/Revolver/RevolverBullet.png
+          Pivot: {x: 0.5, y: 0.5}
+        FrameRate: 0
+        Loop: 0
+        Collapsed: 0
+      - Name: SMG
+        Depth: 2
+        Folders: []
+        SpriteDescriptions:
+        - Sprite: {fileID: 21300016, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: Bullets/SMG/SMG Bullet.png
+          Pivot: {x: 0.5, y: 0.5}
+        FrameRate: 0
+        Loop: 0
+        Collapsed: 0
+      SpriteDescriptions: []
+      FrameRate: 0
+      Loop: 0
+      Collapsed: 1
+    - Name: UI
+      Depth: 2
+      Folders:
+      - Name: Aims
+        Depth: 2
+        Folders: []
+        SpriteDescriptions:
+        - Sprite: {fileID: 21300022, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: UI/Aims/Aim0.png
+          Pivot: {x: 0.5, y: 0.5}
+        FrameRate: 0
+        Loop: 0
+        Collapsed: 0
+      SpriteDescriptions: []
+      FrameRate: 0
+      Loop: 0
+      Collapsed: 1
+    - Name: VFX
+      Depth: 2
+      Folders:
+      - Name: Simple Bullet Colliding
+        Depth: 2
+        Folders: []
+        SpriteDescriptions:
+        - Sprite: {fileID: 21300024, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation
+            1_0.png
+          Pivot: {x: 0.5, y: 0.5}
+        - Sprite: {fileID: 21300026, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation
+            1_1.png
+          Pivot: {x: 0.5, y: 0.5}
+        - Sprite: {fileID: 21300028, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation
+            1_2.png
+          Pivot: {x: 0.5, y: 0.5}
+        - Sprite: {fileID: 21300030, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation
+            1_3.png
+          Pivot: {x: 0.5, y: 0.5}
+        FrameRate: 0
+        Loop: 0
+        Collapsed: 0
+      - Name: Small eplosion
+        Depth: 2
+        Folders: []
+        SpriteDescriptions:
+        - Sprite: {fileID: 21300032, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: VFX/Small eplosion/Small explosion_Animation 1_0.png
+          Pivot: {x: 0.5, y: 0.5}
+        - Sprite: {fileID: 21300034, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: VFX/Small eplosion/Small explosion_Animation 1_1.png
+          Pivot: {x: 0.5, y: 0.5}
+        - Sprite: {fileID: 21300036, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: VFX/Small eplosion/Small explosion_Animation 1_2.png
+          Pivot: {x: 0.5, y: 0.5}
+        - Sprite: {fileID: 21300038, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: VFX/Small eplosion/Small explosion_Animation 1_3.png
+          Pivot: {x: 0.5, y: 0.5}
+        - Sprite: {fileID: 21300040, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: VFX/Small eplosion/Small explosion_Animation 1_4.png
+          Pivot: {x: 0.5, y: 0.5}
+        FrameRate: 0
+        Loop: 0
+        Collapsed: 0
+      SpriteDescriptions: []
+      FrameRate: 0
+      Loop: 0
+      Collapsed: 1
+    - Name: Weapons
+      Depth: 2
+      Folders:
+      - Name: MachineGun
+        Depth: 2
+        Folders: []
+        SpriteDescriptions:
+        - Sprite: {fileID: 21300042, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: Weapons/MachineGun/MachineGun.png
+          Pivot: {x: 0.5, y: 0.5}
+        - Sprite: {fileID: 21300044, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: Weapons/MachineGun/MachineGunBullet.png
+          Pivot: {x: 0.5, y: 0.5}
+        - Sprite: {fileID: 21300046, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: Weapons/MachineGun/MachineGunMuzzleFlash.png
+          Pivot: {x: 0.5, y: 0.5}
+        FrameRate: 0
+        Loop: 0
+        Collapsed: 0
+      - Name: Minigun
+        Depth: 2
+        Folders: []
+        SpriteDescriptions:
+        - Sprite: {fileID: 21300048, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: Weapons/Minigun/Minigun.png
+          Pivot: {x: 0.5, y: 0.5}
+        FrameRate: 0
+        Loop: 0
+        Collapsed: 0
+      - Name: Revolver
+        Depth: 2
+        Folders: []
+        SpriteDescriptions:
+        - Sprite: {fileID: 21300050, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: Weapons/Revolver/MazzleFlash.png
+          Pivot: {x: 0.5, y: 0.5}
+        - Sprite: {fileID: 21300052, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: Weapons/Revolver/Revolver.png
+          Pivot: {x: 0.5, y: 0.5}
+        FrameRate: 0
+        Loop: 0
+        Collapsed: 0
+      - Name: SMG
+        Depth: 2
+        Folders: []
+        SpriteDescriptions:
+        - Sprite: {fileID: 21300054, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: Weapons/SMG/SMG.png
+          Pivot: {x: 0.5, y: 0.5}
+        FrameRate: 0
+        Loop: 0
+        Collapsed: 0
+      - Name: TrippleMachineGun
+        Depth: 2
+        Folders: []
+        SpriteDescriptions:
+        - Sprite: {fileID: 21300056, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: Weapons/TrippleMachineGun/TrippleMachineGunBullet.png
+          Pivot: {x: 0.5, y: 0.5}
+        - Sprite: {fileID: 21300058, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: Weapons/TrippleMachineGun/TrippleMachineGunMuzzleFlash.png
+          Pivot: {x: 0.5, y: 0.5}
+        - Sprite: {fileID: 21300060, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
+          FileName: Weapons/TrippleMachineGun/TrippleMachineGup.png
+          Pivot: {x: 0.5, y: 0.5}
         FrameRate: 0
         Loop: 0
         Collapsed: 0

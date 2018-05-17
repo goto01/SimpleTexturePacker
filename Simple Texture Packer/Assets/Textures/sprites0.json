@@ -1,8 +1,26 @@
 {"frames": [
 
 {
+	"filename": "Bullets/Revolver/RevolverBullet.png",
+	"frame": {"x":7,"y":0,"w":8,"h":13},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":8,"h":13},
+	"sourceSize": {"w":8,"h":13},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Bullets/SMG/SMG Bullet.png",
+	"frame": {"x":96,"y":0,"w":12,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":22},
+	"sourceSize": {"w":12,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
 	"filename": "Characters/Player/Beaver/Idle/Idle_0.png",
-	"frame": {"x":0,"y":0,"w":24,"h":24},
+	"frame": {"x":24,"y":47,"w":24,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
@@ -11,7 +29,25 @@
 },
 {
 	"filename": "Characters/Player/Beaver/Idle/Idle_1.png",
-	"frame": {"x":24,"y":0,"w":24,"h":24},
+	"frame": {"x":0,"y":47,"w":24,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+	"sourceSize": {"w":24,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Characters/Player/Beaver/InSpace/InSpace.png",
+	"frame": {"x":80,"y":23,"w":24,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+	"sourceSize": {"w":24,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Characters/Player/Beaver/Jumping/Jumping.png",
+	"frame": {"x":56,"y":23,"w":24,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
@@ -20,7 +56,7 @@
 },
 {
 	"filename": "Characters/Player/Beaver/Running/Running_0.png",
-	"frame": {"x":48,"y":0,"w":24,"h":24},
+	"frame": {"x":0,"y":23,"w":24,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
@@ -29,7 +65,7 @@
 },
 {
 	"filename": "Characters/Player/Beaver/Running/Running_1.png",
-	"frame": {"x":72,"y":0,"w":24,"h":24},
+	"frame": {"x":32,"y":23,"w":24,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
@@ -38,7 +74,7 @@
 },
 {
 	"filename": "Characters/Player/Beaver/Running/Running_2.png",
-	"frame": {"x":96,"y":0,"w":24,"h":24},
+	"frame": {"x":48,"y":47,"w":24,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
@@ -47,7 +83,7 @@
 },
 {
 	"filename": "Characters/Player/Beaver/Running/Running_3.png",
-	"frame": {"x":0,"y":24,"w":24,"h":24},
+	"frame": {"x":72,"y":47,"w":24,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
@@ -56,11 +92,191 @@
 },
 {
 	"filename": "Planets/Simple planet/Simple planet.png",
-	"frame": {"x":0,"y":48,"w":120,"h":120},
+	"frame": {"x":0,"y":131,"w":120,"h":120},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":120},
 	"sourceSize": {"w":120,"h":120},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "UI/Aims/Aim0.png",
+	"frame": {"x":15,"y":0,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_0.png",
+	"frame": {"x":28,"y":75,"w":28,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":28,"h":28},
+	"sourceSize": {"w":28,"h":28},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_1.png",
+	"frame": {"x":0,"y":75,"w":28,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":28,"h":28},
+	"sourceSize": {"w":28,"h":28},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_2.png",
+	"frame": {"x":96,"y":47,"w":28,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":28,"h":28},
+	"sourceSize": {"w":28,"h":28},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_3.png",
+	"frame": {"x":84,"y":75,"w":28,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":28,"h":28},
+	"sourceSize": {"w":28,"h":28},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "VFX/Small eplosion/Small explosion_Animation 1_0.png",
+	"frame": {"x":28,"y":103,"w":28,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":28,"h":28},
+	"sourceSize": {"w":28,"h":28},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "VFX/Small eplosion/Small explosion_Animation 1_1.png",
+	"frame": {"x":84,"y":103,"w":28,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":28,"h":28},
+	"sourceSize": {"w":28,"h":28},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "VFX/Small eplosion/Small explosion_Animation 1_2.png",
+	"frame": {"x":56,"y":103,"w":28,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":28,"h":28},
+	"sourceSize": {"w":28,"h":28},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "VFX/Small eplosion/Small explosion_Animation 1_3.png",
+	"frame": {"x":56,"y":75,"w":28,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":28,"h":28},
+	"sourceSize": {"w":28,"h":28},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "VFX/Small eplosion/Small explosion_Animation 1_4.png",
+	"frame": {"x":0,"y":103,"w":28,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":28,"h":28},
+	"sourceSize": {"w":28,"h":28},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Weapons/MachineGun/MachineGun.png",
+	"frame": {"x":58,"y":0,"w":6,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":6,"h":19},
+	"sourceSize": {"w":6,"h":19},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Weapons/MachineGun/MachineGunBullet.png",
+	"frame": {"x":84,"y":0,"w":12,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":22},
+	"sourceSize": {"w":12,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Weapons/MachineGun/MachineGunMuzzleFlash.png",
+	"frame": {"x":64,"y":0,"w":20,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
+	"sourceSize": {"w":20,"h":20},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Weapons/Minigun/Minigun.png",
+	"frame": {"x":24,"y":23,"w":8,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":8,"h":24},
+	"sourceSize": {"w":8,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Weapons/Revolver/MazzleFlash.png",
+	"frame": {"x":31,"y":0,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Weapons/Revolver/Revolver.png",
+	"frame": {"x":0,"y":0,"w":7,"h":9},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":7,"h":9},
+	"sourceSize": {"w":7,"h":9},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Weapons/SMG/SMG.png",
+	"frame": {"x":47,"y":0,"w":11,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":11,"h":16},
+	"sourceSize": {"w":11,"h":16},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Weapons/TrippleMachineGun/TrippleMachineGunBullet.png",
+	"frame": {"x":108,"y":0,"w":6,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":6,"h":22},
+	"sourceSize": {"w":6,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Weapons/TrippleMachineGun/TrippleMachineGunMuzzleFlash.png",
+	"frame": {"x":104,"y":23,"w":24,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+	"sourceSize": {"w":24,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Weapons/TrippleMachineGun/TrippleMachineGup.png",
+	"frame": {"x":114,"y":0,"w":12,"h":23},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":23},
+	"sourceSize": {"w":12,"h":23},
 	"pivot": {"x":0.5,"y":0.5}
 }],
 "meta": {
@@ -68,8 +284,8 @@
 	"version": "1.0",
 	"image": "sprites0.png",
 	"format": "RGBA8888",
-	"size": {"w":120,"h":168},
+	"size": {"w":128,"h":251},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:314ac40cd9324db6270c278c059f925d:2c8aa4c7b345784969883031bdd58d3f:c1d55fc7fffb8e7f7508cb2a5442c3cd$"
+	"smartupdate": "$TexturePacker:SmartUpdate:0d99ce386a4412f40b41ff04ca0823b8:68f5c193ad3e2c13edf5c0956d47138f:c1d55fc7fffb8e7f7508cb2a5442c3cd$"
 }
 }

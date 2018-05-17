@@ -10,7 +10,7 @@ namespace TexturePacker.Editor.Windows
 {
 	public class TextureRepositoryBrowserWindow : EditorWindow
 	{
-		private const int MaxScalingValue = 10; 
+		private const int MaxScalingValue = 50; 
 		private const int Margin = 10;
 		private const int MaxDepth = 100;
 		private const int IndentWidth = 20;
@@ -27,8 +27,19 @@ namespace TexturePacker.Editor.Windows
 		private Vector2 _selectionScroll;
 		private bool _ctrlPressed;
 		private Folder _selectedFolder;
-		
+
+		private int ScalingValue
+		{
+			get { return PlayerPrefs.GetInt(ScalingSpritePreviewValue); }
+			set
+			{
+				value = Mathf.Clamp(value, 1, MaxScalingValue);
+				PlayerPrefs.SetInt(ScalingSpritePreviewValue, value);
+			}
+		}
 		private float HalfWindowWidth {get { return (position.width - Margin) / 2; }}
+		private float WindowWidth{get { return position.width; }}
+		private float WindowHeight{get { return position.height; }}
 		
 		public static void ShowSelf()
 		{
@@ -55,6 +66,7 @@ namespace TexturePacker.Editor.Windows
 			DrawSelectionInspector();
 			EditorGUILayout.EndVertical();
 			EditorGUILayout.EndHorizontal();
+			DrawScalingEditor();
 			
 			Repaint();
 			EditorUtility.SetDirty(_textureRepository);
@@ -78,9 +90,6 @@ namespace TexturePacker.Editor.Windows
 			EditorGUILayout.LabelField("Texture Repository Browser", EditorStyles.boldLabel);
 			EditorGUILayout.BeginHorizontal();
 			if (GUILayout.Button("Refresh")) LoadTextureRepositories();
-			var value = EditorGUILayout.IntField(ScalingSpritePreviewValue, EditorPrefs.GetInt(ScalingSpritePreviewValue), GUILayout.Width(250));
-			value = Mathf.Clamp(value, 1, MaxScalingValue);
-			EditorPrefs.SetInt(ScalingSpritePreviewValue, value);
 			EditorGUILayout.EndHorizontal();
 		}
 
@@ -148,16 +157,15 @@ namespace TexturePacker.Editor.Windows
 				DrawFolderSelectionInspector();
 				return;
 			}
-			_selectionScroll = EditorGUILayout.BeginScrollView(_selectionScroll, GUI.skin.box);
+			_selectionScroll = EditorGUILayout.BeginScrollView(_selectionScroll);
 			foreach (var selectedSprite in _selectedSprites)
 			{
+				EditorGUILayout.BeginVertical(GUI.skin.box);
 				EditorGUILayout.LabelField(selectedSprite.FileName);
 				selectedSprite.Pivot = EditorGUILayout.Vector2Field("Pivot", selectedSprite.Pivot);
-				var width = GUILayoutUtility.GetLastRect().width;
-				var height = width * selectedSprite.Sprite.rect.height / selectedSprite.Sprite.rect.width;
-				if (height > 1) selectedSprite.Height = height;
-				var rect = GUILayoutUtility.GetRect(0, selectedSprite.Height/EditorPrefs.GetInt(ScalingSpritePreviewValue));
-				rect.width /= EditorPrefs.GetInt(ScalingSpritePreviewValue);
+				var rect = GUILayoutUtility.GetRect(0, selectedSprite.Sprite.rect.height * ScalingValue);
+				rect.width = selectedSprite.Sprite.rect.width * ScalingValue;
+				rect.height = selectedSprite.Sprite.rect.height * ScalingValue;
 				var spriteRect = new Rect(selectedSprite.Sprite.rect.x/selectedSprite.Sprite.texture.width,
 					selectedSprite.Sprite.rect.y/selectedSprite.Sprite.texture.height,
 					selectedSprite.Sprite.rect.width/selectedSprite.Sprite.texture.width,
@@ -165,6 +173,7 @@ namespace TexturePacker.Editor.Windows
 					
 				GUI.Box(rect, string.Empty);
 				GUI.DrawTextureWithTexCoords(rect, selectedSprite.Sprite.texture, spriteRect);
+				EditorGUILayout.EndVertical();
 			}
 			EditorGUILayout.EndScrollView();
 		}
@@ -175,6 +184,17 @@ namespace TexturePacker.Editor.Windows
 			_selectedFolder.FrameRate = EditorGUILayout.IntField("Frame Rate", _selectedFolder.FrameRate);
 			_selectedFolder.Loop = EditorGUILayout.Toggle("Loop", _selectedFolder.Loop);
 			EditorGUILayout.EndVertical();
+		}
+
+		private void DrawScalingEditor()
+		{
+			const float buttonHeight = 40;
+			const float buttonWidth = 40;
+			const float indent = 20;
+			if (GUI.Button(new Rect(WindowWidth - indent - buttonWidth * 2, WindowHeight - indent - buttonHeight, buttonWidth, buttonHeight), "-", EditorStyles.miniButtonLeft))
+				ScalingValue--;
+			if (GUI.Button(new Rect(WindowWidth - indent - buttonWidth, WindowHeight - indent - buttonHeight, buttonWidth, buttonHeight), "+", EditorStyles.miniButtonRight))
+				ScalingValue++;
 		}
 
 		private void SelectSprite(SpriteDescription spriteDescription)
