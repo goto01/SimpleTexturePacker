@@ -74,7 +74,7 @@ namespace TexturePacker.Editor.Windows
 
 		private void Init()
 		{
-			if (_textureRepositories == null) LoadTextureRepositories();
+			if (_textureRepositories == null || _textureRepositories.Count == 0) LoadTextureRepositories();
 			if (_selectedSprites == null) _selectedSprites = new List<SpriteDescription>();
 		}
 
