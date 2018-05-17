@@ -30,11 +30,17 @@ namespace TexturePacker.Editor.Animation
 			{
 				name = name,
 				frameRate = frameRate
-			}; 
+			};
+			if (isLooping)
+			{
+				var animationClipSettings = AnimationUtility.GetAnimationClipSettings(animationClip);
+				animationClipSettings.loopTime = true; 
+				AnimationUtility.SetAnimationClipSettings(animationClip, animationClipSettings);
+				
+			}
 			var editorCurveBinding = new EditorCurveBinding()
 			{
 				type = typeof(SpriteRenderer),
-				path = string.Empty,
 				propertyName = "m_Sprite",
 			};
 			var timeStep = 1f / frameRate;
@@ -48,17 +54,6 @@ namespace TexturePacker.Editor.Animation
 				};
 			}
 			AnimationUtility.SetObjectReferenceCurve(animationClip, editorCurveBinding, keyFrames);
-			if (isLooping)
-			{
-				animationClip.wrapMode = WrapMode.Loop;
-				var animationClipSettings = AnimationUtility.GetAnimationClipSettings(animationClip);
-				animationClipSettings.loopTime = true; 
-				AnimationUtility.SetAnimationClipSettings(animationClip, animationClipSettings);
-				AssetDatabase.SaveAssets();
-				EditorUtility.SetDirty(animationClip);
-				
-			}
-			animationClip.EnsureQuaternionContinuity();
 			return animationClip;
 		}
 	}
