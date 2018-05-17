@@ -70,40 +70,39 @@ namespace TexturePacker.Editor.Transformation
 			return root;
 		}
 
-		private static  void CreateOrUpdateSprite(Folder folder, Frame frame, TextureImporterWrapper textureImporterWrapper)
+		private static void CreateOrUpdateSprite(Folder folder, Frame frame, TextureImporterWrapper textureImporterWrapper)
 		{
 			var spriteDescription = GetSpriteDescription(folder, frame.filename);
 			if (spriteDescription == null)
 			{
 				spriteDescription = CreateSpriteDescription(folder, frame, textureImporterWrapper);
 				_newSpriteDescriptions.Add(spriteDescription);
-				return;
 			}
-			CreateSpriteMetaData(frame, textureImporterWrapper, spriteDescription.Pivot);
+			TransformationModificators.Modificate(spriteDescription);
+			CreateSpriteMetaData(frame, textureImporterWrapper, spriteDescription);
 		}
 
-		private static  SpriteDescription GetSpriteDescription(Folder folder, string spriteFileName)
+		private static SpriteDescription GetSpriteDescription(Folder folder, string spriteFileName)
 		{
 			return folder.SpriteDescriptions.SingleOrDefault(x => x.FileName.Equals(spriteFileName));
 		}
 
-		private static  SpriteDescription CreateSpriteDescription(Folder folder, Frame frame, TextureImporterWrapper textureImporterWrapper)
+		private static SpriteDescription CreateSpriteDescription(Folder folder, Frame frame, TextureImporterWrapper textureImporterWrapper)
 		{
 			_outputlog.Append(' ', folder.Depth * 3);
 			_outputlog.AppendLine(string.Format("- Sprite Description created: {0}", frame.filename));
 			var spriteDesription = new SpriteDescription(){FileName = frame.filename, Pivot = new Vector2(frame.pivot.x, frame.pivot.y)};
 			folder.SpriteDescriptions.Add(spriteDesription);
-			CreateSpriteMetaData(frame, textureImporterWrapper, spriteDesription.Pivot);
 			return spriteDesription;
 		}
 
-		private static  void CreateSpriteMetaData(Frame frame, TextureImporterWrapper textureImporterWrapper, Vector2 pivot)
+		private static void CreateSpriteMetaData(Frame frame, TextureImporterWrapper textureImporterWrapper, SpriteDescription spriteDescription)
 		{
 			var rect = new Rect(frame.frame.x, _textureDescription.Texture.height - frame.frame.y - frame.frame.h, frame.frame.w, frame.frame.h);
-			textureImporterWrapper.AddSpriteMetaData(frame.filename, rect, pivot);
+			textureImporterWrapper.AddSpriteMetaData(frame.filename, rect, spriteDescription.Pivot);
 		}
 
-		private static  void SetSprites()
+		private static void SetSprites()
 		{
 			_outputlog.AppendLine();
 			_outputlog.AppendLine("*** New sprites ***");

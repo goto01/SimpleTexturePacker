@@ -43,16 +43,16 @@ MonoBehaviour:
             SpriteDescriptions:
             - Sprite: {fileID: 21300004, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Running/Running_0.png
-              Pivot: {x: 0.5, y: 1}
+              Pivot: {x: 0.5, y: 0}
             - Sprite: {fileID: 21300006, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Running/Running_1.png
-              Pivot: {x: 0.5, y: 1}
+              Pivot: {x: 0.5, y: 0}
             - Sprite: {fileID: 21300008, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Running/Running_2.png
-              Pivot: {x: 0.5, y: 1}
+              Pivot: {x: 0.5, y: 0}
             - Sprite: {fileID: 21300010, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Running/Running_3.png
-              Pivot: {x: 0.5, y: 1}
+              Pivot: {x: 0.5, y: 0}
             FrameRate: 10
             Loop: 1
             Collapsed: 0
