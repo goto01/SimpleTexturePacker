@@ -30,10 +30,10 @@ MonoBehaviour:
             SpriteDescriptions:
             - Sprite: {fileID: 21300000, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Idle/Idle_0.png
-              Pivot: {x: 0.5, y: 0.5}
+              Pivot: {x: 0.5, y: 1}
             - Sprite: {fileID: 21300002, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Idle/Idle_1.png
-              Pivot: {x: 0.5, y: 0.5}
+              Pivot: {x: 0.5, y: 1}
             FrameRate: 5
             Loop: 1
             Collapsed: 0
@@ -43,16 +43,16 @@ MonoBehaviour:
             SpriteDescriptions:
             - Sprite: {fileID: 21300004, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Running/Running_0.png
-              Pivot: {x: 0.5, y: 0}
+              Pivot: {x: 0.5, y: 1}
             - Sprite: {fileID: 21300006, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Running/Running_1.png
-              Pivot: {x: 0.5, y: 0}
+              Pivot: {x: 0.5, y: 1}
             - Sprite: {fileID: 21300008, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Running/Running_2.png
-              Pivot: {x: 0.5, y: 0}
+              Pivot: {x: 0.5, y: 1}
             - Sprite: {fileID: 21300010, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Running/Running_3.png
-              Pivot: {x: 0.5, y: 0}
+              Pivot: {x: 0.5, y: 1}
             FrameRate: 10
             Loop: 1
             Collapsed: 0
@@ -62,7 +62,7 @@ MonoBehaviour:
             SpriteDescriptions:
             - Sprite: {fileID: 21300018, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/InSpace/InSpace.png
-              Pivot: {x: 0.5, y: 0.5}
+              Pivot: {x: 0.5, y: 1}
             FrameRate: 0
             Loop: 0
             Collapsed: 0
@@ -72,7 +72,7 @@ MonoBehaviour:
             SpriteDescriptions:
             - Sprite: {fileID: 21300020, guid: 4898528e7f65d064f87f8dd7f105f1ef, type: 3}
               FileName: Characters/Player/Beaver/Jumping/Jumping.png
-              Pivot: {x: 0.5, y: 0.5}
+              Pivot: {x: 0.5, y: 1}
             FrameRate: 0
             Loop: 0
             Collapsed: 0
@@ -87,7 +87,7 @@ MonoBehaviour:
       SpriteDescriptions: []
       FrameRate: 0
       Loop: 0
-      Collapsed: 0
+      Collapsed: 1
     - Name: Planets
       Depth: 2
       Folders:
@@ -104,7 +104,7 @@ MonoBehaviour:
       SpriteDescriptions: []
       FrameRate: 0
       Loop: 0
-      Collapsed: 0
+      Collapsed: 1
     - Name: Bullets
       Depth: 2
       Folders:
@@ -200,7 +200,7 @@ MonoBehaviour:
       SpriteDescriptions: []
       FrameRate: 0
       Loop: 0
-      Collapsed: 1
+      Collapsed: 0
     - Name: Weapons
       Depth: 2
       Folders:
@@ -219,7 +219,7 @@ MonoBehaviour:
           Pivot: {x: 0.5, y: 0.5}
         FrameRate: 0
         Loop: 0
-        Collapsed: 0
+        Collapsed: 1
       - Name: Minigun
         Depth: 2
         Folders: []
@@ -229,7 +229,7 @@ MonoBehaviour:
           Pivot: {x: 0.5, y: 0.5}
         FrameRate: 0
         Loop: 0
-        Collapsed: 0
+        Collapsed: 1
       - Name: Revolver
         Depth: 2
         Folders: []
@@ -272,7 +272,7 @@ MonoBehaviour:
       SpriteDescriptions: []
       FrameRate: 0
       Loop: 0
-      Collapsed: 0
+      Collapsed: 1
     SpriteDescriptions: []
     FrameRate: 0
     Loop: 0

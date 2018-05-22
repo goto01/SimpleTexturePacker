@@ -23,6 +23,7 @@ namespace TexturePacker.Editor.DialogWindows
 		protected Vector2 _size;
 		protected bool _yesPossible;
 		protected bool _noPossible;
+		protected bool _resizable = true;
 		
 		public event Staff.EventHandler<T> Yes;
 		public event Staff.EventHandler<T> No;
@@ -55,6 +56,7 @@ namespace TexturePacker.Editor.DialogWindows
 
 		public void UpdatePosition()
 		{
+			if (_resizable) return;
 			position = new Rect(_parentRect.x + _parentRect.width/2f - _size.x/2f,
 				_parentRect.y  + _parentRect.height/2f - _size.y/2f, _size.x, _size.y);
 		}
@@ -91,6 +93,18 @@ namespace TexturePacker.Editor.DialogWindows
 			if (!GUILayout.Button(_no)) return;
 			No.Raise((T)this);
 			if (_closeOnNo) Close();
+		}
+
+		protected void RaiseYes()
+		{
+			Yes.Raise((T)this);
+			Close();
+		}
+
+		protected void RaiseNo()
+		{
+			No.Raise((T)this);
+			Close();
 		}
 	}
 }
