@@ -72,7 +72,12 @@ namespace TexturePacker.Editor.Properties
 			EditorGUI.PropertyField(rect, property, label);
 			rect.x += rect.width;
 			rect.width = width * (1 - Separator);
-			if (GUI.Button(rect, "Select")) Dialog.ShowDialog<SpriteSelectorDialogWindow>("Sprite selector dialog", DialogType.YesNo).Yes += OnYes;
+			if (GUI.Button(rect, "Select"))
+			{
+				var window = Dialog.ShowDialog<SpriteSelectorDialogWindow>("Sprite selector dialog", DialogType.YesNo);
+				if (_sprite != null) window.SearchingFilter = _sprite.name;
+				window.Yes += OnYes;
+			}
 		}
 
 		private void DrawFoldout(Rect rect)

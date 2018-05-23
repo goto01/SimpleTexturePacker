@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using TexturePacker.Editor.Repository;
 using UnityEditor;
@@ -8,6 +9,7 @@ namespace TexturePacker.Editor.DialogWindows
 {
 	public class SpriteSelectorDialogWindow : BaseDialogWindow<SpriteSelectorDialogWindow>
 	{
+		private float Height = 480;
 		private const int MaxScalingValue = 50; 
 		private const int MaxDepth = 100;
 		private const int IndentWidth = 10;
@@ -23,11 +25,14 @@ namespace TexturePacker.Editor.DialogWindows
 		private string[] _textureRepositoryNames;
 		private Vector2 _textureRepositoryTreeScroll;
 		private Vector2 _previewScroll;
+		private string _searchFilter;
+		private string _actualSearchFilter;
+		private string _prevSearchFilter;
 		
-		private float TreeEditorHeight {get { return _size.y / 2f; }}
-		private float PreviewEditorHeight {get { return _size.y / 2f; }}
-		private Rect ScaleMinRect{get{return new Rect(_size.x - 2 * ScaleButtonWidth, _size.y - ScaleButtonWidth, ScaleButtonWidth, ScaleButtonWidth);}}
-		private Rect ScaleMaxRect{get{return new Rect(_size.x - ScaleButtonWidth, _size.y - ScaleButtonWidth, ScaleButtonWidth, ScaleButtonWidth);}}
+		private float TreeEditorHeight {get { return 200; }}
+		private float PreviewEditorHeight {get { return 200; }}
+		private Rect ScaleMinRect{get{return new Rect(_size.x - 3 * ScaleButtonWidth, 440 - ScaleButtonWidth, ScaleButtonWidth, ScaleButtonWidth);}}
+		private Rect ScaleMaxRect{get{return new Rect(_size.x - 2 * ScaleButtonWidth, 440 - ScaleButtonWidth, ScaleButtonWidth, ScaleButtonWidth);}}
 		private int ScalingValue
 		{
 			get { return PlayerPrefs.GetInt(ScalingSpritePreviewValue); }
@@ -38,13 +43,23 @@ namespace TexturePacker.Editor.DialogWindows
 			}
 		}
 		public Sprite SelectedSprite { get { return _selectedSpriteDescription.Sprite; } }
+		private bool Searching{get { return !string.IsNullOrEmpty(_searchFilter); }}
+		public string SearchingFilter
+		{
+			get { return _actualSearchFilter; }
+			set
+			{
+				_searchFilter = _prevSearchFilter = value;
+				_actualSearchFilter = value.ToUpper();
+			}
+		}
 		
 		protected override void DrawContentEditor()
 		{
-			_resizable = true;
-			_size = new Vector2(400, 380);
+			_size = new Vector2(_parentRect.width, Height);
 			Init();
 			DrawRepositorySelector();
+			DrawSearchEditor();
 			DrawTextureRepositoryTree();
 			if (_selectedSpriteDescription == null || _selectedSpriteDescription.Sprite == null) return;
 			DrawEditorPreview();
@@ -69,6 +84,18 @@ namespace TexturePacker.Editor.DialogWindows
 			index = EditorGUILayout.Popup("Texture repository", index, _textureRepositoryNames);
 			_textureRepository = _textureRepositories[index];
 		}
+
+		private void DrawSearchEditor()
+		{
+			EditorGUILayout.BeginHorizontal(GUI.skin.FindStyle("Toolbar"));
+			_searchFilter = EditorGUILayout.TextField(_searchFilter, GUI.skin.FindStyle("ToolbarSeachTextField"));
+			if (GUILayout.Button("", GUI.skin.FindStyle("ToolbarSeachCancelButton"))) _searchFilter = string.Empty;
+			EditorGUILayout.EndHorizontal();
+
+			if (!string.Equals(_prevSearchFilter, _searchFilter, StringComparison.InvariantCultureIgnoreCase))
+				_actualSearchFilter = _searchFilter.ToUpper();
+			_prevSearchFilter = _searchFilter;
+		}
 		
 		private void DrawTextureRepositoryTree()
 		{
@@ -86,34 +113,44 @@ namespace TexturePacker.Editor.DialogWindows
 				return;
 			}
 			foreach (var f in folder.Folders)
-			{
-				EditorGUILayout.BeginHorizontal();
-				GUILayout.Space(depth * IndentWidth);
-				GUILayout.Label(SimpleItemPrefix, GUILayout.Width(IndentWidth));
-				if (GUILayout.Button(f.Name, EditorStyles.miniButton)) f.Collapsed = !f.Collapsed;
-				EditorGUILayout.EndHorizontal();
-				if (!f.Collapsed) DrawFolder(f, depth+1);
-			}
+				DrawFolderEditor(f, depth);
 			for (var index = 0; index < folder.SpriteDescriptions.Count; index++)
 			{
 				var spriteDescription = folder.SpriteDescriptions[index];
-				EditorGUILayout.BeginHorizontal();
-				GUILayout.Space(depth * IndentWidth);
-				GUILayout.Label(index == folder.SpriteDescriptions.Count-1 ? LastItemPrefix : SimpleItemPrefix, GUILayout.Width(IndentWidth));
-				if (!CheckForSelection(spriteDescription)) GUI.color = _defaultLabelColor;
-				if (GUILayout.Button(spriteDescription.FileName, GUI.skin.label))
-				{
-					if (_selectedSpriteDescription == spriteDescription) RaiseYes();
-					_selectedSpriteDescription = spriteDescription;
-				}
-				GUI.color = Color.white;
-				EditorGUILayout.EndHorizontal();
+				DrawSpriteEditor(spriteDescription, folder, index, depth);
 			}
+		}
+
+		private void DrawFolderEditor(Folder folder, int depth)
+		{
+			EditorGUILayout.BeginHorizontal();
+			GUILayout.Space(depth * IndentWidth);
+			GUILayout.Label(SimpleItemPrefix, GUILayout.Width(IndentWidth));
+			if (GUILayout.Button(folder.Name, EditorStyles.miniButton)) folder.Collapsed = !folder.Collapsed;
+			EditorGUILayout.EndHorizontal();
+			if (Searching || !folder.Collapsed) DrawFolder(folder, depth+1);
+		}
+
+		private void DrawSpriteEditor(SpriteDescription spriteDescription, Folder folder, int index, int depth)
+		{
+			if (Searching && !spriteDescription.FileName.ToUpper().Contains(_actualSearchFilter)) return;
+			
+			EditorGUILayout.BeginHorizontal();
+			GUILayout.Space(depth * IndentWidth);
+			GUILayout.Label(index == folder.SpriteDescriptions.Count-1 ? LastItemPrefix : SimpleItemPrefix, GUILayout.Width(IndentWidth));
+			if (!CheckForSelection(spriteDescription)) GUI.color = _defaultLabelColor;
+			if (GUILayout.Button(spriteDescription.FileName, GUI.skin.label))
+			{
+				if (_selectedSpriteDescription == spriteDescription) RaiseYes();
+				_selectedSpriteDescription = spriteDescription;
+			}
+			GUI.color = Color.white;
+			EditorGUILayout.EndHorizontal();
 		}
 
 		private void DrawEditorPreview()
 		{
-			EditorGUILayout.BeginVertical(GUILayout.Height(PreviewEditorHeight));
+			EditorGUILayout.BeginVertical(GUI.skin.box, GUILayout.Height(PreviewEditorHeight));
 			_previewScroll = EditorGUILayout.BeginScrollView(_previewScroll);
 			var rect = GUILayoutUtility.GetRect(0, _selectedSpriteDescription.Sprite.rect.height * ScalingValue);
 			rect.width = _selectedSpriteDescription.Sprite.rect.width * ScalingValue;
