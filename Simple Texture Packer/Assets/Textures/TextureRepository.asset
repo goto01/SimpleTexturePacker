@@ -200,7 +200,7 @@ MonoBehaviour:
       SpriteDescriptions: []
       FrameRate: 0
       Loop: 0
-      Collapsed: 0
+      Collapsed: 1
     - Name: Weapons
       Depth: 2
       Folders:
@@ -242,7 +242,7 @@ MonoBehaviour:
           Pivot: {x: 0.5, y: 0.5}
         FrameRate: 0
         Loop: 0
-        Collapsed: 0
+        Collapsed: 1
       - Name: SMG
         Depth: 2
         Folders: []
@@ -268,7 +268,7 @@ MonoBehaviour:
           Pivot: {x: 0.5, y: 0.5}
         FrameRate: 0
         Loop: 0
-        Collapsed: 0
+        Collapsed: 1
       SpriteDescriptions: []
       FrameRate: 0
       Loop: 0

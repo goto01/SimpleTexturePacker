@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using TexturePacker.Editor.Animation;
 using TexturePacker.Editor.DialogWindows;
@@ -27,6 +28,9 @@ namespace TexturePacker.Editor.Windows
 		private Vector2 _selectionScroll;
 		private bool _ctrlPressed;
 		private Folder _selectedFolder;
+		private string _searchFilter;
+		private string _actualSearchFilter;
+		private string _prevSearchFilter;
 
 		private int ScalingValue
 		{
@@ -40,6 +44,7 @@ namespace TexturePacker.Editor.Windows
 		private float HalfWindowWidth {get { return (position.width - Margin) / 2; }}
 		private float WindowWidth{get { return position.width; }}
 		private float WindowHeight{get { return position.height; }}
+		private bool Searching{get { return !string.IsNullOrEmpty(_searchFilter); }}
 		
 		public static void ShowSelf()
 		{
@@ -57,7 +62,8 @@ namespace TexturePacker.Editor.Windows
 				return;
 			}
 			DrawTextureRepositorySelectorEditor();
-			GUILayout.Space(EditorGUIUtility.singleLineHeight*2);
+			GUILayout.Space(EditorGUIUtility.singleLineHeight);
+			DrawSearchField();
 			EditorGUILayout.BeginHorizontal();
 			EditorGUILayout.BeginVertical(GUILayout.Width(HalfWindowWidth));
 			DrawTextureRepositoryTree();
@@ -100,6 +106,18 @@ namespace TexturePacker.Editor.Windows
 			_textureRepository = _textureRepositories[index];
 		}
 
+		private void DrawSearchField()
+		{
+			EditorGUILayout.BeginHorizontal(GUI.skin.FindStyle("Toolbar"));
+			_searchFilter = EditorGUILayout.TextField(_searchFilter, GUI.skin.FindStyle("ToolbarSeachTextField"));
+			if (GUILayout.Button("", GUI.skin.FindStyle("ToolbarSeachCancelButton"))) _searchFilter = string.Empty;
+			EditorGUILayout.EndHorizontal();
+
+			if (!string.Equals(_prevSearchFilter, _searchFilter, StringComparison.InvariantCultureIgnoreCase))
+				_actualSearchFilter = _searchFilter.ToUpper();
+			_prevSearchFilter = _searchFilter;
+		}
+		
 		private void DrawTextureRepositoryTree()
 		{
 			_textureRepositoryTreeScroll = EditorGUILayout.BeginScrollView(_textureRepositoryTreeScroll, GUI.skin.box);
@@ -116,38 +134,45 @@ namespace TexturePacker.Editor.Windows
 				return;
 			}
 			foreach (var f in folder.Folders)
-			{
-				EditorGUILayout.BeginHorizontal();
-				GUILayout.Space(depth * IndentWidth);
-				GUILayout.Label(SimpleItemPrefix, GUILayout.Width(IndentWidth));
-				if (f != _selectedFolder) GUI.color = _defaultLabelColor;
-				if (GUILayout.Button(f.Name, EditorStyles.miniButtonLeft, GUILayout.MinWidth(50))) f.Collapsed = !f.Collapsed;
-				if (GUILayout.Button("Select", EditorStyles.miniButtonMid, GUILayout.Width(50))) SelectFolder(f);
-				if (GUILayout.Button("Animation", EditorStyles.miniButtonMid, GUILayout.Width(70))) CreateAnimation(f);
-				if (GUILayout.Button("Sprites", EditorStyles.miniButtonRight, GUILayout.Width(50))) SelectSprites(f.SpriteDescriptions);
-				EditorGUILayout.EndHorizontal();
-				GUI.color = Color.white;
-				if (!f.Collapsed) DrawFolder(f, depth+1);
-			}
+				DrawFolderEditor(f, depth);
 			for (var index = 0; index < folder.SpriteDescriptions.Count; index++)
+				DrawSpriteEditor(folder.SpriteDescriptions[index], folder, index, depth);
+		}
+
+		private void DrawFolderEditor(Folder folder, int depth)
+		{
+			EditorGUILayout.BeginHorizontal();
+			GUILayout.Space(depth * IndentWidth);
+			GUILayout.Label(SimpleItemPrefix, GUILayout.Width(IndentWidth));
+			if (folder != _selectedFolder) GUI.color = _defaultLabelColor;
+			if (GUILayout.Button(folder.Name, EditorStyles.miniButtonLeft, GUILayout.MinWidth(50))) folder.Collapsed = !folder.Collapsed;
+			if (GUILayout.Button("Select", EditorStyles.miniButtonMid, GUILayout.Width(50))) SelectFolder(folder);
+			if (GUILayout.Button("Animation", EditorStyles.miniButtonMid, GUILayout.Width(70))) CreateAnimation(folder);
+			if (GUILayout.Button("Sprites", EditorStyles.miniButtonRight, GUILayout.Width(50))) SelectSprites(folder.SpriteDescriptions);
+			EditorGUILayout.EndHorizontal();
+			GUI.color = Color.white;
+			if (Searching || !folder.Collapsed) DrawFolder(folder, depth+1);
+		}
+		
+		private void DrawSpriteEditor(SpriteDescription spriteDescription, Folder folder, int index, int depth)
+		{
+			if (Searching && !spriteDescription.FileName.ToUpper().Contains(_actualSearchFilter)) return;
+			
+			EditorGUILayout.BeginHorizontal();
+			GUILayout.Space(depth * IndentWidth);
+			GUILayout.Label(index == folder.SpriteDescriptions.Count-1 ? LastItemPrefix : SimpleItemPrefix, GUILayout.Width(IndentWidth));
+			if (!CheckForSelection(spriteDescription)) GUI.color = _defaultLabelColor;
+			EditorGUILayout.BeginHorizontal();
+			if (GUILayout.Button(spriteDescription.FileName, GUI.skin.label, GUILayout.MinWidth(50)))
 			{
-				var spriteDescription = folder.SpriteDescriptions[index];
-				EditorGUILayout.BeginHorizontal();
-				GUILayout.Space(depth * IndentWidth);
-				GUILayout.Label(index == folder.SpriteDescriptions.Count-1 ? LastItemPrefix : SimpleItemPrefix, GUILayout.Width(IndentWidth));
-				if (!CheckForSelection(spriteDescription)) GUI.color = _defaultLabelColor;
-				EditorGUILayout.BeginHorizontal();
-				if (GUILayout.Button(spriteDescription.FileName, GUI.skin.label, GUILayout.MinWidth(50)))
-				{
-					if (_ctrlPressed) SelectSprite(spriteDescription);
-					else SelectSpriteOnly(spriteDescription);
-				}
-				GUI.color = Color.white;
-				GUILayout.FlexibleSpace();
-				if (GUILayout.Button("Set sprite", EditorStyles.miniButton, GUILayout.Width(70))) SetSprite(spriteDescription.Sprite);
-				EditorGUILayout.EndHorizontal();
-				EditorGUILayout.EndHorizontal();
+				if (_ctrlPressed) SelectSprite(spriteDescription);
+				else SelectSpriteOnly(spriteDescription);
 			}
+			GUI.color = Color.white;
+			GUILayout.FlexibleSpace();
+			if (GUILayout.Button("Set sprite", EditorStyles.miniButton, GUILayout.Width(70))) SetSprite(spriteDescription.Sprite);
+			EditorGUILayout.EndHorizontal();
+			EditorGUILayout.EndHorizontal();
 		}
 
 		private void DrawSelectionInspector()
