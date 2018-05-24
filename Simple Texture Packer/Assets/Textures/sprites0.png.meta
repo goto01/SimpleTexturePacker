@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 4898528e7f65d064f87f8dd7f105f1ef
-timeCreated: 1521802669
-licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
     21300000: Characters/Player/Beaver/Idle/Idle_0.png
@@ -36,7 +34,7 @@ TextureImporter:
     21300058: Weapons/TrippleMachineGun/TrippleMachineGunMuzzleFlash.png
     21300060: Weapons/TrippleMachineGun/TrippleMachineGup.png
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 5
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -76,18 +74,21 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -97,7 +98,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Standalone
+  - serializedVersion: 2
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -124,6 +126,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 0afee3105769b4745870b750c41d5306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Bullets/SMG/SMG Bullet.png
       rect:
@@ -138,6 +146,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 70faa72b39ab14e418eab011fda4e999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Characters/Player/Beaver/Idle/Idle_0.png
       rect:
@@ -147,11 +161,17 @@ TextureImporter:
         width: 24
         height: 24
       alignment: 9
-      pivot: {x: 0.5, y: 1}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: aed6a9ae1a573844ab9646efdabf9ed1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Characters/Player/Beaver/Idle/Idle_1.png
       rect:
@@ -161,11 +181,17 @@ TextureImporter:
         width: 24
         height: 24
       alignment: 9
-      pivot: {x: 0.5, y: 1}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 62be07c03f178de45bd8f8f96a455759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Characters/Player/Beaver/InSpace/InSpace.png
       rect:
@@ -175,11 +201,17 @@ TextureImporter:
         width: 24
         height: 24
       alignment: 9
-      pivot: {x: 0.5, y: 1}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 4e70ffacf7efc354db499c8118c0a684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Characters/Player/Beaver/Jumping/Jumping.png
       rect:
@@ -189,11 +221,17 @@ TextureImporter:
         width: 24
         height: 24
       alignment: 9
-      pivot: {x: 0.5, y: 1}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 2e147c41ee3f7344fbe355d123515bb7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Characters/Player/Beaver/Running/Running_0.png
       rect:
@@ -203,11 +241,17 @@ TextureImporter:
         width: 24
         height: 24
       alignment: 9
-      pivot: {x: 0.5, y: 1}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: b53c5ad9a422b9e4d95aad322c8f6157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Characters/Player/Beaver/Running/Running_1.png
       rect:
@@ -217,11 +261,17 @@ TextureImporter:
         width: 24
         height: 24
       alignment: 9
-      pivot: {x: 0.5, y: 1}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 8c61b125fa2238440a49874ff2d68be7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Characters/Player/Beaver/Running/Running_2.png
       rect:
@@ -231,11 +281,17 @@ TextureImporter:
         width: 24
         height: 24
       alignment: 9
-      pivot: {x: 0.5, y: 1}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 60501a472d992594aaccd97e0c7381e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Characters/Player/Beaver/Running/Running_3.png
       rect:
@@ -245,11 +301,17 @@ TextureImporter:
         width: 24
         height: 24
       alignment: 9
-      pivot: {x: 0.5, y: 1}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 63f9f1baeef477d40b3b62991bc83c82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Planets/Simple planet/Simple planet.png
       rect:
@@ -264,6 +326,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 8025336b7c7c56347a32cf91e312752d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: UI/Aims/Aim0.png
       rect:
@@ -278,6 +346,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 0fad6392b3d07884aae376aa8bca6648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_0.png
       rect:
@@ -292,6 +366,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 14a9b0c6cb4e94e4fa9a0b4a28efe149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_1.png
       rect:
@@ -306,6 +386,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: cac30fcadeb4e52469a95715748e102c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_2.png
       rect:
@@ -320,6 +406,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: a7902b2c207d322428ebac23ddb6558e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_3.png
       rect:
@@ -334,6 +426,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 8b326de47bbeaf140aca465546892c2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: VFX/Small eplosion/Small explosion_Animation 1_0.png
       rect:
@@ -348,6 +446,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: e1c813cf56e058d47b3674ccfac7a5f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: VFX/Small eplosion/Small explosion_Animation 1_1.png
       rect:
@@ -362,6 +466,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: e1a9390ed8f786649a1ffb8d29f8eadd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: VFX/Small eplosion/Small explosion_Animation 1_2.png
       rect:
@@ -376,6 +486,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 5594566d9d2344847af90dcaea129893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: VFX/Small eplosion/Small explosion_Animation 1_3.png
       rect:
@@ -390,6 +506,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: aa957bca252019346ad7d977bc9b93ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: VFX/Small eplosion/Small explosion_Animation 1_4.png
       rect:
@@ -404,6 +526,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: e968a2a05d8e9bb458ce830ec7d6336d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Weapons/MachineGun/MachineGun.png
       rect:
@@ -418,6 +546,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: f1ed36558f4280749a5a59977e648488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Weapons/MachineGun/MachineGunBullet.png
       rect:
@@ -432,6 +566,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 58a1a41222a6d914bb0b0be92a2234eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Weapons/MachineGun/MachineGunMuzzleFlash.png
       rect:
@@ -446,6 +586,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 533d0ce88cd4cd242b28755967dbc5f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Weapons/Minigun/Minigun.png
       rect:
@@ -460,6 +606,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 4939cc794f3ddf045992cedc91f6d68f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Weapons/Revolver/MazzleFlash.png
       rect:
@@ -474,6 +626,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: df90f778050de03499215269cda89797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Weapons/Revolver/Revolver.png
       rect:
@@ -488,6 +646,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: b7759fec1f0d24a4ea64ddef58a5b004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Weapons/SMG/SMG.png
       rect:
@@ -502,6 +666,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: f12feda6fe2bd114d9c597377432e4ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Weapons/TrippleMachineGun/TrippleMachineGunBullet.png
       rect:
@@ -516,6 +686,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 47db2956a6932b1418766ab72bff0387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Weapons/TrippleMachineGun/TrippleMachineGunMuzzleFlash.png
       rect:
@@ -530,6 +706,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 0183faee8d8c8b743a46040f4a6fa03c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Weapons/TrippleMachineGun/TrippleMachineGup.png
       rect:
@@ -544,8 +726,20 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 6a29f8555d1306341a1de6f07ea8a8b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 50ad4eea16b550d429d8b35b3649c964
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
