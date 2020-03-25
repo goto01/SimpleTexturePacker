@@ -1,40 +1,102 @@
 fileFormatVersion: 2
 guid: 4898528e7f65d064f87f8dd7f105f1ef
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Characters/Player/Beaver/Idle/Idle_0.png
-    21300002: Characters/Player/Beaver/Idle/Idle_1.png
-    21300004: Characters/Player/Beaver/Running/Running_0.png
-    21300006: Characters/Player/Beaver/Running/Running_1.png
-    21300008: Characters/Player/Beaver/Running/Running_2.png
-    21300010: Characters/Player/Beaver/Running/Running_3.png
-    21300012: Planets/Simple planet/Simple planet.png
-    21300014: Bullets/Revolver/RevolverBullet.png
-    21300016: Bullets/SMG/SMG Bullet.png
-    21300018: Characters/Player/Beaver/InSpace/InSpace.png
-    21300020: Characters/Player/Beaver/Jumping/Jumping.png
-    21300022: UI/Aims/Aim0.png
-    21300024: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_0.png
-    21300026: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_1.png
-    21300028: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_2.png
-    21300030: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_3.png
-    21300032: VFX/Small eplosion/Small explosion_Animation 1_0.png
-    21300034: VFX/Small eplosion/Small explosion_Animation 1_1.png
-    21300036: VFX/Small eplosion/Small explosion_Animation 1_2.png
-    21300038: VFX/Small eplosion/Small explosion_Animation 1_3.png
-    21300040: VFX/Small eplosion/Small explosion_Animation 1_4.png
-    21300042: Weapons/MachineGun/MachineGun.png
-    21300044: Weapons/MachineGun/MachineGunBullet.png
-    21300046: Weapons/MachineGun/MachineGunMuzzleFlash.png
-    21300048: Weapons/Minigun/Minigun.png
-    21300050: Weapons/Revolver/MazzleFlash.png
-    21300052: Weapons/Revolver/Revolver.png
-    21300054: Weapons/SMG/SMG.png
-    21300056: Weapons/TrippleMachineGun/TrippleMachineGunBullet.png
-    21300058: Weapons/TrippleMachineGun/TrippleMachineGunMuzzleFlash.png
-    21300060: Weapons/TrippleMachineGun/TrippleMachineGup.png
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Characters/Player/Beaver/Idle/Idle_0.png
+  - first:
+      213: 21300002
+    second: Characters/Player/Beaver/Idle/Idle_1.png
+  - first:
+      213: 21300004
+    second: Characters/Player/Beaver/Running/Running_0.png
+  - first:
+      213: 21300006
+    second: Characters/Player/Beaver/Running/Running_1.png
+  - first:
+      213: 21300008
+    second: Characters/Player/Beaver/Running/Running_2.png
+  - first:
+      213: 21300010
+    second: Characters/Player/Beaver/Running/Running_3.png
+  - first:
+      213: 21300012
+    second: Planets/Simple planet/Simple planet.png
+  - first:
+      213: 21300014
+    second: Bullets/Revolver/RevolverBullet.png
+  - first:
+      213: 21300016
+    second: Bullets/SMG/SMG Bullet.png
+  - first:
+      213: 21300018
+    second: Characters/Player/Beaver/InSpace/InSpace.png
+  - first:
+      213: 21300020
+    second: Characters/Player/Beaver/Jumping/Jumping.png
+  - first:
+      213: 21300022
+    second: UI/Aims/Aim0.png
+  - first:
+      213: 21300024
+    second: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_0.png
+  - first:
+      213: 21300026
+    second: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_1.png
+  - first:
+      213: 21300028
+    second: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_2.png
+  - first:
+      213: 21300030
+    second: VFX/Simple Bullet Colliding/Simple Bullet Colliding_Animation 1_3.png
+  - first:
+      213: 21300032
+    second: VFX/Small eplosion/Small explosion_Animation 1_0.png
+  - first:
+      213: 21300034
+    second: VFX/Small eplosion/Small explosion_Animation 1_1.png
+  - first:
+      213: 21300036
+    second: VFX/Small eplosion/Small explosion_Animation 1_2.png
+  - first:
+      213: 21300038
+    second: VFX/Small eplosion/Small explosion_Animation 1_3.png
+  - first:
+      213: 21300040
+    second: VFX/Small eplosion/Small explosion_Animation 1_4.png
+  - first:
+      213: 21300042
+    second: Weapons/MachineGun/MachineGun.png
+  - first:
+      213: 21300044
+    second: Weapons/MachineGun/MachineGunBullet.png
+  - first:
+      213: 21300046
+    second: Weapons/MachineGun/MachineGunMuzzleFlash.png
+  - first:
+      213: 21300048
+    second: Weapons/Minigun/Minigun.png
+  - first:
+      213: 21300050
+    second: Weapons/Revolver/MazzleFlash.png
+  - first:
+      213: 21300052
+    second: Weapons/Revolver/Revolver.png
+  - first:
+      213: 21300054
+    second: Weapons/SMG/SMG.png
+  - first:
+      213: 21300056
+    second: Weapons/TrippleMachineGun/TrippleMachineGunBullet.png
+  - first:
+      213: 21300058
+    second: Weapons/TrippleMachineGun/TrippleMachineGunMuzzleFlash.png
+  - first:
+      213: 21300060
+    second: Weapons/TrippleMachineGun/TrippleMachineGup.png
   externalObjects: {}
-  serializedVersion: 5
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -52,6 +114,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -62,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: 0
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -87,7 +151,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -98,7 +162,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -109,6 +174,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -128,6 +194,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 0afee3105769b4745870b750c41d5306
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -148,6 +215,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 70faa72b39ab14e418eab011fda4e999
+      internalID: 21300016
       vertices: []
       indices: 
       edges: []
@@ -168,6 +236,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: aed6a9ae1a573844ab9646efdabf9ed1
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -188,6 +257,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 62be07c03f178de45bd8f8f96a455759
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -208,6 +278,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 4e70ffacf7efc354db499c8118c0a684
+      internalID: 21300018
       vertices: []
       indices: 
       edges: []
@@ -228,6 +299,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 2e147c41ee3f7344fbe355d123515bb7
+      internalID: 21300020
       vertices: []
       indices: 
       edges: []
@@ -248,6 +320,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: b53c5ad9a422b9e4d95aad322c8f6157
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -268,6 +341,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 8c61b125fa2238440a49874ff2d68be7
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -288,6 +362,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 60501a472d992594aaccd97e0c7381e8
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -308,6 +383,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 63f9f1baeef477d40b3b62991bc83c82
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -328,6 +404,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 8025336b7c7c56347a32cf91e312752d
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -348,6 +425,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 0fad6392b3d07884aae376aa8bca6648
+      internalID: 21300022
       vertices: []
       indices: 
       edges: []
@@ -368,6 +446,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 14a9b0c6cb4e94e4fa9a0b4a28efe149
+      internalID: 21300024
       vertices: []
       indices: 
       edges: []
@@ -388,6 +467,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: cac30fcadeb4e52469a95715748e102c
+      internalID: 21300026
       vertices: []
       indices: 
       edges: []
@@ -408,6 +488,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: a7902b2c207d322428ebac23ddb6558e
+      internalID: 21300028
       vertices: []
       indices: 
       edges: []
@@ -428,6 +509,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 8b326de47bbeaf140aca465546892c2f
+      internalID: 21300030
       vertices: []
       indices: 
       edges: []
@@ -448,6 +530,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: e1c813cf56e058d47b3674ccfac7a5f6
+      internalID: 21300032
       vertices: []
       indices: 
       edges: []
@@ -468,6 +551,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: e1a9390ed8f786649a1ffb8d29f8eadd
+      internalID: 21300034
       vertices: []
       indices: 
       edges: []
@@ -488,6 +572,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 5594566d9d2344847af90dcaea129893
+      internalID: 21300036
       vertices: []
       indices: 
       edges: []
@@ -508,6 +593,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: aa957bca252019346ad7d977bc9b93ed
+      internalID: 21300038
       vertices: []
       indices: 
       edges: []
@@ -528,6 +614,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: e968a2a05d8e9bb458ce830ec7d6336d
+      internalID: 21300040
       vertices: []
       indices: 
       edges: []
@@ -548,6 +635,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: f1ed36558f4280749a5a59977e648488
+      internalID: 21300042
       vertices: []
       indices: 
       edges: []
@@ -568,6 +656,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 58a1a41222a6d914bb0b0be92a2234eb
+      internalID: 21300044
       vertices: []
       indices: 
       edges: []
@@ -588,6 +677,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 533d0ce88cd4cd242b28755967dbc5f0
+      internalID: 21300046
       vertices: []
       indices: 
       edges: []
@@ -608,6 +698,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 4939cc794f3ddf045992cedc91f6d68f
+      internalID: 21300048
       vertices: []
       indices: 
       edges: []
@@ -628,6 +719,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: df90f778050de03499215269cda89797
+      internalID: 21300050
       vertices: []
       indices: 
       edges: []
@@ -648,6 +740,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: b7759fec1f0d24a4ea64ddef58a5b004
+      internalID: 21300052
       vertices: []
       indices: 
       edges: []
@@ -668,6 +761,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: f12feda6fe2bd114d9c597377432e4ad
+      internalID: 21300054
       vertices: []
       indices: 
       edges: []
@@ -688,6 +782,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 47db2956a6932b1418766ab72bff0387
+      internalID: 21300056
       vertices: []
       indices: 
       edges: []
@@ -708,6 +803,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 0183faee8d8c8b743a46040f4a6fa03c
+      internalID: 21300058
       vertices: []
       indices: 
       edges: []
@@ -728,6 +824,7 @@ TextureImporter:
       tessellationDetail: -1
       bones: []
       spriteID: 6a29f8555d1306341a1de6f07ea8a8b8
+      internalID: 21300060
       vertices: []
       indices: 
       edges: []
@@ -736,11 +833,15 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 50ad4eea16b550d429d8b35b3649c964
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
