@@ -170,7 +170,12 @@ namespace TexturePacker.Editor.Windows
 			}
 			GUI.color = Color.white;
 			GUILayout.FlexibleSpace();
-			if (GUILayout.Button("Set sprite", EditorStyles.miniButton, GUILayout.Width(70))) SetSprite(spriteDescription.Sprite);
+			//if (GUILayout.Button("Set sprite", EditorStyles.miniButton, GUILayout.Width(70))) SetSprite(spriteDescription.Sprite);
+			if (GUILayout.Button("Delete", EditorStyles.miniButton, GUILayout.Width(50)))
+			{
+				Dialog.ShowDialog<YesNoDialogWindow>("Delete item", DialogType.YesNo).Yes += (sender) =>
+					folder.SpriteDescriptions.RemoveAt(index);
+			}
 			EditorGUILayout.EndHorizontal();
 			EditorGUILayout.EndHorizontal();
 		}
@@ -188,6 +193,13 @@ namespace TexturePacker.Editor.Windows
 				EditorGUILayout.BeginVertical(GUI.skin.box);
 				EditorGUILayout.LabelField(selectedSprite.FileName);
 				selectedSprite.Pivot = EditorGUILayout.Vector2Field("Pivot", selectedSprite.Pivot);
+				if (selectedSprite.Sprite == null)
+				{
+					EditorGUILayout.Space();
+					EditorGUILayout.LabelField("Sprite is null");
+					EditorGUILayout.EndVertical();
+					continue;
+				}
 				var rect = GUILayoutUtility.GetRect(0, selectedSprite.Sprite.rect.height * ScalingValue);
 				rect.width = selectedSprite.Sprite.rect.width * ScalingValue;
 				rect.height = selectedSprite.Sprite.rect.height * ScalingValue;
