@@ -18,7 +18,7 @@ namespace TexturePacker.Editor.Windows
 			EditorPrefs.SetString(TexturePackerPublishing.DestinationTexturePath, EditorGUILayout.TextField(EditorPrefs.GetString(TexturePackerPublishing.DestinationTexturePath)));
 			EditorGUILayout.EndHorizontal();
 			EditorGUILayout.BeginHorizontal();
-			EditorGUILayout.LabelField(TexturePackerPublishing.DestinationTexturePath, GUILayout.Width(150));
+			EditorGUILayout.LabelField(TexturePackerPublishing.DestinationDataPath, GUILayout.Width(150));
 			EditorGUILayout.LabelField("Assets", GUILayout.Width(50));
 			EditorPrefs.SetString(TexturePackerPublishing.DestinationDataPath, EditorGUILayout.TextField(EditorPrefs.GetString(TexturePackerPublishing.DestinationDataPath)));
 			EditorGUILayout.EndHorizontal();
