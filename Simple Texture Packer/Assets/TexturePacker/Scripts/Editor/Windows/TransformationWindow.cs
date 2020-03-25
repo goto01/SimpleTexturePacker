@@ -25,6 +25,7 @@ namespace TexturePacker.Editor.Windows
 		private TextureRepository _targetTextureRepository;
 		private string _outputlog;
 		private Vector2 _outputlogScroll;
+		private string _argsOutput;
 
 		public static void ShowSelf()
 		{
@@ -46,6 +47,7 @@ namespace TexturePacker.Editor.Windows
 			}
 			DrawTargetRepositoryInspector();
 			DrawOutputlogEditor();
+			DrawArgsLogEditor();
 		}
 
 		private void Init()
@@ -79,7 +81,8 @@ namespace TexturePacker.Editor.Windows
 				InitTextureDescriptions();
 				InitTextureRepositories();
 			}
-			if (GUILayout.Button("Publish", EditorStyles.miniButtonRight, GUILayout.Width(100))) TexturePackerPublishing.Publish();
+			if (GUILayout.Button("Publish", EditorStyles.miniButtonRight, GUILayout.Width(100))) 
+				_argsOutput = TexturePackerPublishing.Publish();
 			EditorGUILayout.EndHorizontal();
 		}
 		
@@ -162,6 +165,11 @@ namespace TexturePacker.Editor.Windows
 			_outputlogScroll = EditorGUILayout.BeginScrollView(_outputlogScroll, GUI.skin.box);
 			EditorGUILayout.LabelField(_outputlog, GUILayout.Height(_outputlog.Count(x=>x.Equals('\n')) * EditorGUIUtility.singleLineHeight));
 			EditorGUILayout.EndScrollView();
+		}
+
+		private void DrawArgsLogEditor()
+		{
+			EditorGUILayout.TextArea(_argsOutput, GUILayout.Height(50));
 		}
 	}
 }

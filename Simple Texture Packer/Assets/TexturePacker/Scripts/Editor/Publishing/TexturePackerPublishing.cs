@@ -15,7 +15,7 @@ namespace TexturePacker.Editor.Publishing
 		public const string ShapePadding = "Shape Padding";
 		public const string Extrude = "Extrude";
 		
-		public static void Publish(string texturePackerPath, string destinationTexturePath, string destinationDataPath, 
+		public static string Publish(string texturePackerPath, string destinationTexturePath, string destinationDataPath, 
 			string sourceFolder, int shapePadding, int extrude)
 		{
 			var args = string.Format("--extrude {5} " +
@@ -30,12 +30,14 @@ namespace TexturePacker.Editor.Publishing
 				Application.dataPath, destinationTexturePath, destinationDataPath, sourceFolder, shapePadding, extrude);
 			UnityEngine.Debug.Log(args);
 			Process.Start(texturePackerPath, args);
+			return args;
 		}
 
-		public static void Publish()
+		public static string Publish()
 		{
-			Publish(EditorPrefs.GetString(TexturePackerPath), EditorPrefs.GetString(DestinationTexturePath), EditorPrefs.GetString(DestinationDataPath),
-				EditorPrefs.GetString(SourceFolder), EditorPrefs.GetInt(ShapePadding), EditorPrefs.GetInt(Extrude));
+			return Publish(EditorPrefs.GetString(TexturePackerPath), EditorPrefs.GetString(DestinationTexturePath), 
+				EditorPrefs.GetString(DestinationDataPath), EditorPrefs.GetString(SourceFolder), EditorPrefs.GetInt(ShapePadding),
+				EditorPrefs.GetInt(Extrude));
 		}
 	}
 }
