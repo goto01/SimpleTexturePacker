@@ -13,11 +13,12 @@ namespace TexturePacker.Editor.Publishing
 		public const string DestinationDataPath = "Destination Data Path";
 		public const string SourceFolder = "Source Folder";
 		public const string ShapePadding = "Shape Padding";
+		public const string Extrude = "Extrude";
 		
 		public static void Publish(string texturePackerPath, string destinationTexturePath, string destinationDataPath, 
-			string sourceFolder, int shapePadding)
+			string sourceFolder, int shapePadding, int extrude)
 		{
-			var args = string.Format("--extrude 0 " +
+			var args = string.Format("--extrude {5} " +
 			                         "--algorithm Basic " +
 			                         "--trim-mode None " +
 			                         "--png-opt-level 0 " +
@@ -26,7 +27,7 @@ namespace TexturePacker.Editor.Publishing
 			                         "--sheet  \"{0}{1}\" " +
 			                         "--data \"{0}{2}\" " +
 			                         "--format json-array \"{3}\"",
-				Application.dataPath, destinationTexturePath, destinationDataPath, sourceFolder, shapePadding);
+				Application.dataPath, destinationTexturePath, destinationDataPath, sourceFolder, shapePadding, extrude);
 			UnityEngine.Debug.Log(args);
 			Process.Start(texturePackerPath, args);
 		}
@@ -34,7 +35,7 @@ namespace TexturePacker.Editor.Publishing
 		public static void Publish()
 		{
 			Publish(EditorPrefs.GetString(TexturePackerPath), EditorPrefs.GetString(DestinationTexturePath), EditorPrefs.GetString(DestinationDataPath),
-				EditorPrefs.GetString(SourceFolder), EditorPrefs.GetInt(ShapePadding));
+				EditorPrefs.GetString(SourceFolder), EditorPrefs.GetInt(ShapePadding), EditorPrefs.GetInt(Extrude));
 		}
 	}
 }

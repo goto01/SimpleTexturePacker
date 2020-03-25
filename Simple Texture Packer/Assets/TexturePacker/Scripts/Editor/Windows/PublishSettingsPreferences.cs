@@ -26,6 +26,8 @@ namespace TexturePacker.Editor.Windows
 				EditorPrefs.GetString(TexturePackerPublishing.SourceFolder)));
 			EditorPrefs.SetInt(TexturePackerPublishing.ShapePadding, EditorGUILayout.IntField(TexturePackerPublishing.ShapePadding, 
 				EditorPrefs.GetInt(TexturePackerPublishing.ShapePadding)));
+			EditorPrefs.SetInt(TexturePackerPublishing.Extrude, EditorGUILayout.IntField(TexturePackerPublishing.Extrude, 
+				EditorPrefs.GetInt(TexturePackerPublishing.Extrude)));
 			
 			if (GUILayout.Button("Publish")) TexturePackerPublishing.Publish();
 		}
