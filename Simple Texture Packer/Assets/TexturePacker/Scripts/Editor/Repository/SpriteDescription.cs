@@ -9,5 +9,6 @@ namespace TexturePacker.Editor.Repository
 		public Sprite Sprite;
 		public string FileName;
 		public Vector2 Pivot;
+		public Vector4 Borders;
 	}
 }

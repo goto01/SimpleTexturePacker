@@ -193,6 +193,7 @@ namespace TexturePacker.Editor.Windows
 				EditorGUILayout.BeginVertical(GUI.skin.box);
 				EditorGUILayout.LabelField(selectedSprite.FileName);
 				selectedSprite.Pivot = EditorGUILayout.Vector2Field("Pivot", selectedSprite.Pivot);
+				selectedSprite.Borders = EditorGUILayout.Vector4Field("Borders", selectedSprite.Borders);
 				if (selectedSprite.Sprite == null)
 				{
 					EditorGUILayout.Space();

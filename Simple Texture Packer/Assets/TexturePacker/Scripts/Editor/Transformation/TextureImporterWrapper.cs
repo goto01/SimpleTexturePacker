@@ -35,14 +35,15 @@ namespace TexturePacker.Editor.Transformation
 			_spritesMetaData.Clear();
 		}
 
-		public void AddSpriteMetaData(string name, Rect rect, Vector2 pivot)
+		public void AddSpriteMetaData(string name, Rect rect, Vector2 pivot, Vector4 border)
 		{
 			var smd = new SpriteMetaData()
 			{
 				alignment = 9,	//Custom pivot
 				pivot = pivot,
 				rect = rect,
-				name = name
+				name = name,
+				border = border,
 			};
 			_spritesMetaData.Add(smd);
 		}

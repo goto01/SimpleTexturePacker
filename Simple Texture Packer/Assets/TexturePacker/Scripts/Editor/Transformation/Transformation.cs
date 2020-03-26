@@ -91,7 +91,11 @@ namespace TexturePacker.Editor.Transformation
 		{
 			_outputlog.Append(' ', folder.Depth * 3);
 			_outputlog.AppendLine(string.Format("- Sprite Description created: {0}", frame.filename));
-			var spriteDesription = new SpriteDescription(){FileName = frame.filename, Pivot = new Vector2(frame.pivot.x, frame.pivot.y)};
+			var spriteDesription = new SpriteDescription()
+			{
+				FileName = frame.filename, Pivot = new Vector2(frame.pivot.x, frame.pivot.y),
+				
+			};
 			folder.SpriteDescriptions.Add(spriteDesription);
 			return spriteDesription;
 		}
@@ -99,7 +103,7 @@ namespace TexturePacker.Editor.Transformation
 		private static void CreateSpriteMetaData(Frame frame, TextureImporterWrapper textureImporterWrapper, SpriteDescription spriteDescription)
 		{
 			var rect = new Rect(frame.frame.x, _textureDescription.Texture.height - frame.frame.y - frame.frame.h, frame.frame.w, frame.frame.h);
-			textureImporterWrapper.AddSpriteMetaData(frame.filename, rect, spriteDescription.Pivot);
+			textureImporterWrapper.AddSpriteMetaData(frame.filename, rect, spriteDescription.Pivot, spriteDescription.Borders);
 		}
 
 		private static void SetSprites()
