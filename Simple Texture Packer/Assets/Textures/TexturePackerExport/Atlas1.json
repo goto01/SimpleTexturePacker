@@ -1,0 +1,156 @@
+{"frames": [
+
+{
+	"filename": "Sore/SoreBlowingUp/sore_5.png",
+	"frame": {"x":1,"y":1,"w":16,"h":18},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":18},
+	"sourceSize": {"w":16,"h":18}
+},
+{
+	"filename": "Sore/SoreBlowingUp/sore_6.png",
+	"frame": {"x":19,"y":1,"w":16,"h":18},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":18},
+	"sourceSize": {"w":16,"h":18}
+},
+{
+	"filename": "Sore/SoreBlowingUp/sore_7.png",
+	"frame": {"x":37,"y":1,"w":16,"h":18},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":18},
+	"sourceSize": {"w":16,"h":18}
+},
+{
+	"filename": "Sore/SoreBlowingUp/sore_8.png",
+	"frame": {"x":55,"y":1,"w":16,"h":18},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":18},
+	"sourceSize": {"w":16,"h":18}
+},
+{
+	"filename": "Sore/SoreBlowingUp/sore_9.png",
+	"frame": {"x":73,"y":1,"w":16,"h":18},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":18},
+	"sourceSize": {"w":16,"h":18}
+},
+{
+	"filename": "Sore/SoreBlowingUp/sore_10.png",
+	"frame": {"x":91,"y":1,"w":16,"h":18},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":18},
+	"sourceSize": {"w":16,"h":18}
+},
+{
+	"filename": "Sore/SoreBlowingUp/sore_11.png",
+	"frame": {"x":109,"y":1,"w":16,"h":18},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":18},
+	"sourceSize": {"w":16,"h":18}
+},
+{
+	"filename": "Sore/SoreGrowingUp/sore_0.png",
+	"frame": {"x":1,"y":21,"w":16,"h":18},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":18},
+	"sourceSize": {"w":16,"h":18}
+},
+{
+	"filename": "Sore/SoreGrowingUp/sore_1.png",
+	"frame": {"x":19,"y":21,"w":16,"h":18},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":18},
+	"sourceSize": {"w":16,"h":18}
+},
+{
+	"filename": "Sore/SoreGrowingUp/sore_2.png",
+	"frame": {"x":37,"y":21,"w":16,"h":18},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":18},
+	"sourceSize": {"w":16,"h":18}
+},
+{
+	"filename": "Sore/SoreGrowingUp/sore_3.png",
+	"frame": {"x":55,"y":21,"w":16,"h":18},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":18},
+	"sourceSize": {"w":16,"h":18}
+},
+{
+	"filename": "Sore/SoreGrowingUp/sore_4.png",
+	"frame": {"x":73,"y":21,"w":16,"h":18},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":18},
+	"sourceSize": {"w":16,"h":18}
+},
+{
+	"filename": "SoreAcid/SoreAcid_Animation 1_0.png",
+	"frame": {"x":91,"y":21,"w":9,"h":8},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":9,"h":8},
+	"sourceSize": {"w":9,"h":8}
+},
+{
+	"filename": "SoreAcid/SoreAcid_Animation 1_1.png",
+	"frame": {"x":102,"y":21,"w":9,"h":8},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":9,"h":8},
+	"sourceSize": {"w":9,"h":8}
+},
+{
+	"filename": "SoreAcid/SoreAcid_Animation 1_2.png",
+	"frame": {"x":113,"y":21,"w":9,"h":8},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":9,"h":8},
+	"sourceSize": {"w":9,"h":8}
+},
+{
+	"filename": "SoreAcid/SoreAcid_Animation 1_3.png",
+	"frame": {"x":1,"y":41,"w":9,"h":8},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":9,"h":8},
+	"sourceSize": {"w":9,"h":8}
+},
+{
+	"filename": "SoreAcid/SoreAcid_Animation 1_4.png",
+	"frame": {"x":12,"y":41,"w":9,"h":8},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":9,"h":8},
+	"sourceSize": {"w":9,"h":8}
+},
+{
+	"filename": "SoreAcid/SoreAcid_Animation 1_5.png",
+	"frame": {"x":23,"y":41,"w":9,"h":8},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":9,"h":8},
+	"sourceSize": {"w":9,"h":8}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "Atlas1.png",
+	"format": "RGBA8888",
+	"size": {"w":128,"h":128},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:8ee189a2a2750f9eb1106b7057c3b3d8:fbce9f6144ece1bbeffedf4cef8f8124:5f0e5b97c1c33f4dc8f77155f36f1b9c$"
+}
+}

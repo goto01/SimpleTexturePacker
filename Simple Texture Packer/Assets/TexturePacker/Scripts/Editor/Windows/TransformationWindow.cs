@@ -19,6 +19,7 @@ namespace TexturePacker.Editor.Windows
 		private readonly Color _alertColor = new Color(1, .4f, .4f);
 		private readonly Color _alrightColor = new Color(.4f, 1, .4f);
 		
+		private List<PublishDescription> _publishDescriptions;
 		private List<TextureDescription> _textureDescriptions;
 		private List<TextureRepository> _textureRepositories;
 		private string[] _textureRepositoryNames;
@@ -36,6 +37,13 @@ namespace TexturePacker.Editor.Windows
 		{
 			Init();
 			DrawHeaderInspector();
+			DrawPublishDescriptionsHeader();
+			if (_publishDescriptions != null)
+			{
+				DrawPublishDescriptionsInspector();
+				EditorGUILayout.Space();
+			}
+			EditorGUILayout.LabelField("Texture descriptions:", EditorStyles.miniBoldLabel);
 			if (_targetTextureRepository != null)
 			{
 				DrawTextureDescriptionsInspector();
@@ -54,6 +62,7 @@ namespace TexturePacker.Editor.Windows
 		{
 			if (_textureDescriptions == null) InitTextureDescriptions();
 			if (_textureRepositories == null) InitTextureRepositories();
+			if (_publishDescriptions == null) InitPublishDescriptions();
 			if (_outputlog == null) _outputlog = string.Empty;
 		}
 
@@ -72,18 +81,56 @@ namespace TexturePacker.Editor.Windows
 			}
 		}
 
+		private void InitPublishDescriptions()
+		{
+			_publishDescriptions = AssetDatabaseHelper.LoadAllAssets<PublishDescription>();
+		}
+
 		private void DrawHeaderInspector()
 		{
 			EditorGUILayout.LabelField("Texture transformation", EditorStyles.boldLabel);
 			EditorGUILayout.BeginHorizontal();
-			if (GUILayout.Button("Refresh", EditorStyles.miniButtonLeft))
+			if (GUILayout.Button("Refresh", EditorStyles.miniButton))
 			{
 				InitTextureDescriptions();
 				InitTextureRepositories();
+				InitPublishDescriptions();
 			}
-			if (GUILayout.Button("Publish", EditorStyles.miniButtonRight, GUILayout.Width(100))) 
-				_argsOutput = TexturePackerPublishing.Publish();
 			EditorGUILayout.EndHorizontal();
+		}
+
+		private void DrawPublishDescriptionsHeader()
+		{
+			EditorGUILayout.BeginHorizontal();
+			EditorGUILayout.LabelField("Publish descriptions:", EditorStyles.miniBoldLabel);
+			GUILayout.FlexibleSpace();
+			GUILayout.Button("Publish all", EditorStyles.miniButton);
+			EditorGUILayout.EndHorizontal();
+		}
+		
+		private void DrawPublishDescriptionsInspector()
+		{
+			foreach (var publishDescription in _publishDescriptions)
+			{
+				EditorGUILayout.BeginVertical(GUI.skin.box, GUILayout.Width(position.width - EditorGUIUtility.standardVerticalSpacing*3));
+				EditorGUILayout.BeginHorizontal();
+				EditorGUILayout.LabelField(publishDescription.name);
+				GUILayout.FlexibleSpace();
+				if (GUILayout.Button("Publish", EditorStyles.miniButtonLeft, GUILayout.Width(60)))
+				{
+					var window = Dialog.ShowDialog<YesNoDialogWindow>("Publish", DialogType.YesNo);
+					window.Message = string.Format("Publish {0}?", publishDescription.name);
+					var pd = publishDescription;
+					window.Yes += sender => Publish(pd);
+				}
+				if (GUILayout.Button("Select", EditorStyles.miniButtonRight, GUILayout.Width(60)))
+				{
+					EditorGUIUtility.PingObject(publishDescription);
+					Selection.activeObject = publishDescription;
+				}
+				EditorGUILayout.EndHorizontal();
+				EditorGUILayout.EndVertical();
+			}
 		}
 		
 		private void DrawTextureDescriptionsInspector()
@@ -95,7 +142,7 @@ namespace TexturePacker.Editor.Windows
 				EditorGUILayout.LabelField(textureDescription.Name);
 				
 				DrawTimeInspector(textureDescription);
-				if (GUILayout.Button("Transform to repository", EditorStyles.miniButtonLeft))
+				if (GUILayout.Button("Transform to repository", EditorStyles.miniButtonLeft, GUILayout.Width(150)))
 				{
 					var window = Dialog.ShowDialog<YesNoDialogWindow>("Transform to texture repository", DialogType.YesNo);
 					window.Message = string.Format("Transform Texture Description {0} to Texture Repository {1}", textureDescription.Name,
@@ -103,7 +150,7 @@ namespace TexturePacker.Editor.Windows
 					var td = textureDescription;
 					window.Yes += sender => TransformTextureDescription(td);
 				}
-				if (GUILayout.Button("Select", EditorStyles.miniButtonRight))
+				if (GUILayout.Button("Select", EditorStyles.miniButtonRight, GUILayout.Width(60)))
 				{
 					EditorGUIUtility.PingObject(textureDescription);
 					Selection.activeObject = textureDescription;
@@ -140,6 +187,11 @@ namespace TexturePacker.Editor.Windows
 			GUI.color = Color.white;
 		}
 
+		private void Publish(PublishDescription publishDescription)
+		{
+			_argsOutput = TexturePackerPublishing.Publish(publishDescription);
+		}
+		
 		private void TransformTextureDescription(TextureDescription textureDescription)
 		{
 			textureDescription.TransformationDate = DateTime.Now.ToString(DateTimeFormat);

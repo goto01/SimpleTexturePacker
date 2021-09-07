@@ -1,5 +1,6 @@
 ﻿using TexturePacker.Editor.DialogWindows;
 using TexturePacker.Editor.Domain;
+using TexturePacker.Editor.Publishing;
 using TexturePacker.Editor.Repository;
 using TexturePacker.Editor.Windows;
 using UnityEditor;
@@ -11,7 +12,14 @@ namespace TexturePacker.Editor
 		private const string CreateMenu = "Assets/Create/Texture packer";
 		private const string TexturePacker = "Texture Packer";
 		
-		[MenuItem(CreateMenu + "/Texture Description", false, 1101)]
+
+		[MenuItem(CreateMenu + "/Publish description", false, 1101)]
+		public static void CreatePublishDescription()
+		{
+			ObjectCreatorHelper.CreateAsset<PublishDescription>();
+		}
+
+		[MenuItem(CreateMenu + "/Texture Description", false, 1102)]
 		public static void CreateTextureDescription()
 		{
 			Dialog.ShowDialog<CreateTextureDescriptionDialogWindow>("Create Texture Description Window", DialogType.YesNo)
@@ -26,7 +34,7 @@ namespace TexturePacker.Editor
 			textureDescription.Name = window.Name;
 		}
 
-		[MenuItem(CreateMenu + "/Texture Repository", false, 1102)]
+		[MenuItem(CreateMenu + "/Texture Repository", false, 1103)]
 		public static void CreateTextureRepository()
 		{
 			ObjectCreatorHelper.CreateAsset<TextureRepository>();
@@ -42,12 +50,6 @@ namespace TexturePacker.Editor
 		public static void ShowTextureRepositoryBrowserWindow()
 		{
 			TextureRepositoryBrowserWindow.ShowSelf();
-		}
-
-		[MenuItem(TexturePacker + "/Publish", false, 20)]
-		public static void Publish()
-		{
-			Publishing.TexturePackerPublishing.Publish();
 		}
 	}
 }
