@@ -1,6 +1,12 @@
 # SimpleTexturePacker
-Simple texture packer system for Unity
+Simple [Texture Packer](https://www.codeandweb.com/texturepacker) importer tool for Unity. Imports generated Texture and JSon data, parses and structures it. 
 
-Example of parameters:
+<img src="./Preview/Browser.gif"/> 
 
-![GitHub Logo](/Example.png)
+#Supported parameters (some are paid)
+* extrude
+* algorithm
+* trim-mode
+* png-opt-level
+* shape-padding
+* disable-auto-alias
