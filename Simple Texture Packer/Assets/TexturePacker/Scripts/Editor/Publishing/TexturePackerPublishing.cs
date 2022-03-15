@@ -9,13 +9,6 @@ namespace TexturePacker.Editor.Publishing
 	public static class TexturePackerPublishing
 	{
 		public const string TexturePackerPath = "Texture Packer Path";
-		public const string DestinationTexturePath = "Destination Texture Path";
-		public const string DestinationDataPath = "Destination Data Path";
-		public const string SourceFolder = "Source Folder";
-		public const string ShapePadding = "Shape Padding";
-		public const string Extrude = "Extrude";
-		public const string FixedWidth = "Fixed Width";
-		public const string FixedHeight = "Fixed Height";
 		
 		public static string Publish(string texturePackerPath, string destinationTexturePath, string destinationDataPath, 
 			string sourceFolder, int shapePadding, int extrude, int width, int height)
